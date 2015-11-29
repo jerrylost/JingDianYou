@@ -4,36 +4,42 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 
 import com.jerry.jingdianyou.R;
 
 /**
  * Created by Jerry.Zou
  */
-public class Welcome extends Activity implements Runnable
+public class WelcomeActivity extends Activity
 {
   @Override
   protected void onCreate(Bundle savedInstanceState)
   {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_welcome);
-    Thread thread = new Thread(this);
-    thread.start();
+
+    mHandler.sendEmptyMessageDelayed(1,3000);
   }
 
   @Override
-  public void run()
+  protected void onDestroy()
   {
-    try
+    super.onDestroy();
+
+    // remove all callback and message
+    mHandler.removeCallbacksAndMessages(null);
+  }
+
+  private Handler mHandler = new Handler()
+  {
+    @Override
+    public void handleMessage(Message msg)
     {
-      Thread.sleep(3000);
       isFirstRun();
     }
-    catch (InterruptedException e)
-    {
-      e.printStackTrace();
-    }
-  }
+  };
 
   public void isFirstRun()
   {

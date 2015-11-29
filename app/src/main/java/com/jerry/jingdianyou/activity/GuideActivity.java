@@ -27,10 +27,13 @@ public class GuideActivity extends Activity implements ViewPager.OnPageChangeLis
 {
   @ViewInject(R.id.guide_text_jump)
   private TextView mJump;
+
   @ViewInject(R.id.guide_page)
   private ViewPager mViewPager;
+
   @ViewInject(R.id.guide_layout)
   private LinearLayout mLinearLayout;
+
   private List<View> mList = new LinkedList<View>();
   private SharedPreferences sp;
   private SharedPreferences.Editor edit;
@@ -58,8 +61,10 @@ public class GuideActivity extends Activity implements ViewPager.OnPageChangeLis
         finish();
       }
     });
+
     //添加图片
     onAddView();
+
     //动态添加圆点
     onPoint();
   }

@@ -6,13 +6,11 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@mipmap/monkey"
-        />
+        android:background="@mipmap/monkey"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="暂无攻略收藏"
         android:textSize="@dimen/d_20"
-        android:textColor="@color/gray"
-        />
+        android:textColor="@color/gray"/>
 </LinearLayout>

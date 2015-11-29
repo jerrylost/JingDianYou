@@ -1,141 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.jerry.jingdianyou">
-
+<manifest package="com.jerry.jingdianyou"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
     <!-- 获取精确位置 GPS芯片接收卫星的定位信息,定位精度达10米以内 -->
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <!-- 通过WiFi或移动基站的方式获取用户错略的经纬度信息 -->
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <!-- 获取模拟定位信息 -->
-    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_GPS"/>
 
     <application
         android:name=".application.JDYApplication"
-        tools:replace="icon,label"
         android:allowBackup="true"
         android:icon="@mipmap/aboutlogo"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        >
-        <meta-data
-            android:name="com.baidu.lbsapi.API_KEY"
-            android:value="y8ACNbzX99zTZkRmseS90yf9" />
-        <activity android:name=".activity.Welcome"
+        tools:replace="icon,label">
+
+        <activity
+            android:name=".activity.WelcomeActivity"
             android:screenOrientation="portrait">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".activity.StrategyDetailActivity"
+        <activity
+            android:name=".activity.StrategyDetailActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AnimActivityTheme"/>
-        <activity android:name=".activity.RecommendActivity"
+        <activity
+            android:name=".activity.RecommendActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AnimActivityTheme"/>
-        <activity android:name=".activity.LoginActivity"
+        <activity
+            android:name=".activity.LoginActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AnimActivityTheme"/>
-        <activity android:name=".activity.RendezvousActivity"
+        <activity
+            android:name=".activity.RendezvousActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AnimActivityTheme"/>
-        <activity android:name=".activity.OnWayActivity"
+        <activity
+            android:name=".activity.OnWayActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AnimActivityTheme"/>
-        <activity android:name=".activity.TuCaoActivity"
+        <activity
+            android:name=".activity.TuCaoActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AnimActivityTheme"/>
-        <activity android:name=".activity.ChatActivity"
+        <activity
+            android:name=".activity.ChatActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AnimActivityTheme"/>
-        <activity android:name=".activity.NearByActivity"
+        <activity
+            android:name=".activity.NearByActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AnimActivityTheme"/>
-        <activity android:name=".activity.ScenicDetailActivity"
+        <activity
+            android:name=".activity.ScenicDetailActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AnimActivityTheme"/>
-        <activity android:name=".activity.BaiduMapActivity"
+        <activity
+            android:name=".activity.BaiduMapActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AnimActivityTheme"/>
-        <activity android:name=".activity.RendezvousDetailActivity"
+        <activity
+            android:name=".activity.RendezvousDetailActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AnimActivityTheme"/>
-        <activity android:name=".activity.SignUpListActivity"
+        <activity
+            android:name=".activity.SignUpListActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AnimActivityTheme"/>
-        <activity android:name=".activity.OnWayDetailActivity"
+        <activity
+            android:name=".activity.OnWayDetailActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AnimActivityTheme"/>
-        <activity android:name=".activity.TuCaoDetailActivity"
+        <activity
+            android:name=".activity.TuCaoDetailActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AnimActivityTheme"/>
-        <activity android:name=".activity.CityActivity"
+        <activity
+            android:name=".activity.CityActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AnimActivityTheme"/>
+        <activity
+            android:name=".activity.AboutWeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.AboutWelcomeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.CompanyIntroduceActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.HotelMoreActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.DescriptionActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.RequirementActivtiy"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.RecommendListActivity"
+            android:screenOrientation="portrait"/>
 
-        <activity android:name=".activity.AboutWeActivity"
-            android:screenOrientation="portrait"
-            />
-        <activity android:name=".activity.AboutWelcomeActivity"
-            android:screenOrientation="portrait"
-            />
-        <activity android:name=".activity.CompanyIntroduceActivity"
-            android:screenOrientation="portrait"
-            />
-        <activity android:name=".activity.HotelMoreActivity"
-            android:screenOrientation="portrait"
-            />
-        <activity android:name=".activity.DescriptionActivity"
-            android:screenOrientation="portrait"
-            />
-        <activity android:name=".activity.RequirementActivtiy"
-            android:screenOrientation="portrait"
-            />
-        <activity android:name=".activity.RecommendListActivity"
-            android:screenOrientation="portrait"
-            />
+        <activity
+            android:name=".activity.PersonMessage"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.SearchActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.GuideActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.StrategyDetailWebView"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.CollectActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.ScenicBookActivity"
+            android:screenOrientation="portrait"/>
 
-        <activity android:name=".activity.PersonMessage"
-            android:screenOrientation="portrait"
-            />
-        <activity android:name=".activity.SearchActivity"
-            android:screenOrientation="portrait"
-            />
-        <activity android:name=".activity.MainActivity"
-            android:screenOrientation="portrait"
-            />
-        <activity android:name=".activity.GuideActivity"
-            android:screenOrientation="portrait"
-            />
-        <activity android:name=".activity.StrategyDetailWebView"
-            android:screenOrientation="portrait"
-            />
-        <activity android:name=".activity.CollectActivity"
-            android:screenOrientation="portrait"
-            />
-        <activity android:name=".activity.ScenicBookActivity"
-            android:screenOrientation="portrait"
-            />
+        <activity android:name=".activity.MyWalking"/>
+
+        <!--百度地图-->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="y8ACNbzX99zTZkRmseS90yf9"/>
 
         <service
             android:name="com.baidu.location.f"
             android:enabled="true"
-            android:process=":remote" >
+            android:process=":remote">
         </service>
-        <activity android:name=".activity.MyWalking"/>
     </application>
 
 </manifest>
