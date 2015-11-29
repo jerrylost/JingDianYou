@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/green"
+        android:gravity="center_vertical">
+        <Button
+            android:id="@+id/btn_toback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/back"
+            android:text=" 预定填写"
+            android:textSize="@dimen/s_25"
+            android:textColor="@color/white"
+            android:background="@null"
+            android:layout_marginLeft="@dimen/d_5"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/d_10">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linear_strock"
+            android:orientation="vertical"
+            android:padding="@dimen/d_5">
+            <TextView
+                android:id="@+id/tv_book_scenic_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="景区名称"
+                android:textSize="@dimen/s_18"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_10">
+
+                <Button
+                    android:id="@+id/btn_book_requir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/d_22"
+                    android:text="购票须知 >>"
+                    android:background="@null"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/s_18" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥"
+                    android:textColor="#FF4500"
+                    android:textSize="@dimen/d_18" />
+                <TextView
+                    android:id="@+id/tv_book_sale_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="48"
+                    android:textColor="#FF4500"
+                    android:textSize="@dimen/d_18" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linear_strock"
+            android:padding="@dimen/d_5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用日期"
+                android:textSize="@dimen/s_18"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btn_book_use_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableRight="@mipmap/dating_arrow"
+                android:text="请选择使用日期  "
+                android:textColor="@color/color_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linear_strock"
+            android:padding="@dimen/d_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购买份数"
+                android:textSize="@dimen/s_18" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btn_book_sub"
+                android:layout_width="@dimen/d_18"
+                android:layout_height="@dimen/d_18"
+                android:background="@mipmap/ico_05" />
+
+            <TextView
+                android:id="@+id/tv_book_buy_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/d_5"
+                android:layout_marginRight="@dimen/d_5"
+                android:text="1"
+                android:textSize="@dimen/s_18" />
+
+            <Button
+                android:id="@+id/btn_book_add"
+                android:layout_width="@dimen/d_18"
+                android:layout_height="@dimen/d_18"
+                android:layout_marginRight="@dimen/d_5"
+                android:background="@mipmap/ico_04" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_15"
+            android:background="@drawable/linear_strock"
+            android:padding="@dimen/d_10">
+
+            <TextView
+                android:id="@+id/tv_book_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预定人：youshabi"
+                android:textSize="@dimen/s_18" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linear_strock"
+            android:orientation="vertical"
+            android:padding="@dimen/d_10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_book_userphone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="手机号码：13804389438"
+                    android:textSize="@dimen/s_18" />
+
+                <ImageView
+                    android:layout_width="@dimen/d_18"
+                    android:layout_height="@dimen/d_18"
+                    android:src="@mipmap/tongxunluioc" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="身份证号："
+                    android:textSize="@dimen/s_18" />
+
+                <EditText
+                    android:id="@+id/edt_book_user_idcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_15"
+            android:background="@drawable/linear_strock"
+            android:padding="@dimen/d_10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="现金券"
+                android:textSize="@dimen/s_18" />
+
+            <ImageView
+                android:layout_width="@dimen/d_18"
+                android:layout_height="@dimen/d_18"
+                android:src="@mipmap/arrow2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/d_5"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:padding="@dimen/d_5">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="订单金额合计："
+                    android:textSize="@dimen/s_22" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥"
+                    android:textColor="#FF4500"
+                    android:textSize="@dimen/s_22" />
+                <TextView
+                    android:id="@+id/tv_book_total_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="48"
+                    android:textColor="#FF4500"
+                    android:textSize="@dimen/s_22" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="需支付金额："
+                    android:textSize="@dimen/s_22" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥"
+                    android:textColor="#FF4500"
+                    android:textSize="@dimen/s_22" />
+                <TextView
+                    android:id="@+id/tv_book_need_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="48"
+                    android:textColor="#FF4500"
+                    android:textSize="@dimen/s_22" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_book_next"
+            android:layout_width="@dimen/d_90"
+            android:layout_height="wrap_content"
+            android:text="下一步"
+            android:background="@color/green"
+            android:layout_gravity="center_horizontal"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

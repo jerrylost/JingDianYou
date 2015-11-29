@@ -1,0 +1,68 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="AnimActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/FeelyouWindowAnimTheme</item>
+    </style>
+
+    <style name="FeelyouWindowAnimTheme" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/in_from_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/out_from_right</item>
+        <item name="android:activityCloseEnterAnimation">@anim/in_from_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/out_from_left</item>
+    </style>
+
+
+    <style name="MainTabStyle" >
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/color_main_tab_text</item>
+    </style>
+    <style name="PopWindow">
+        <item name="android:windowEnterAnimation">@anim/share_enter</item>
+        <item name="android:windowExitAnimation">@anim/share_out</item>
+    </style>
+
+    <!-- 预定须知页面linearlayout的style-->
+    <style name="ll_requirement_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/linear_strock</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingBottom">@dimen/d_10</item>
+        <item name="android:paddingTop">@dimen/d_10</item>
+        <item name="android:paddingLeft">@dimen/d_20</item>
+        <item name="android:paddingRight">@dimen/d_20</item>
+        </style>
+
+    <style name="tv_requirement">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/d_10</item>
+        <item name="android:textSize">@dimen/s_15</item>
+    </style>
+
+
+
+    <!-- dialog -->
+    <style name="CommonDialog" parent="@android:style/Theme.Dialog">
+        <!--  <item name="android:windowBackground">@drawable/smssdk_dialog_bg</item> -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!-- white dialog -->
+    <style name="WhiteDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/dialog_white_bg</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

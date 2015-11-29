@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/green">
+        <ImageView
+            android:id="@+id/img_require_back"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/d_10"
+            android:src="@mipmap/back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/d_5"
+            android:text="预定须知"
+            android:textColor="#fffdfd"
+            android:textSize="@dimen/s_25"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/d_2">
+            <LinearLayout
+                style="@style/ll_requirement_style"
+                android:id="@+id/ll_business_hours">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="开放时间"
+                    android:textSize="@dimen/s_22"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tv_business_hours"
+                    android:text="开放时间dddd"
+                    style="@style/tv_requirement"/>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_requirement_style"
+                android:id="@+id/ll_productCost">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="费用包含"
+                    android:textSize="@dimen/s_22"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tv_productCost"
+                    style="@style/tv_requirement" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/ll_requirement_style"
+                android:id="@+id/ll_enter_mode">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="入园方式"
+                    android:textSize="@dimen/s_22"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tv_enter_mode"
+                    style="@style/tv_requirement"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_requirement_style"
+                android:id="@+id/ll_preference_policy">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="优惠政策"
+                    android:textSize="@dimen/s_22"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tv_preference_policy"
+                    style="@style/tv_requirement"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_requirement_style"
+                android:id="@+id/ll_backTo_rule">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="退改规则"
+                    android:textSize="@dimen/s_22"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tv_backTo_rule"
+                    style="@style/tv_requirement" />
+
+            </LinearLayout>
+            <LinearLayout
+                style="@style/ll_requirement_style"
+                android:id="@+id/ll_kindly_reminder">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="温馨提示"
+                    android:textSize="@dimen/s_22"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tv_kindly_reminder"
+                    style="@style/tv_requirement"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

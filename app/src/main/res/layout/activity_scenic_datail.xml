@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_topic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_1"
+                android:background="#212121" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/d_5"
+                    android:layout_marginRight="@dimen/d_5"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_chat_edit"
+                    android:textColorHint="#787676"
+                    android:textSize="@dimen/s_25" />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="@dimen/d_5"
+                    android:layout_marginRight="@dimen/d_5"
+                    android:background="@drawable/btn_emojoy_selector" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:text="发送"
+                    android:textColor="#807e7e"
+                    android:textSize="@dimen/s_25" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/ll_topic">
+
+
+                <include layout="@layout/activity_scenic_detail_container" />
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+    <include layout="@layout/activity_scenic_detail_header" />
+</FrameLayout>

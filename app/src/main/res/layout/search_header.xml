@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@color/green"
+    android:layout_width="match_parent"
+    android:layout_height="55dp">
+    <ImageView
+        android:layout_marginLeft="@dimen/d_5"
+        android:onClick="doBack"
+        android:layout_gravity="center_vertical"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/back"
+        />
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/d_5"
+        android:layout_marginRight="@dimen/d_10"
+        android:layout_width="match_parent"
+        android:background="@drawable/search_shape"
+        android:layout_height="40dp">
+        <EditText
+            android:cursorVisible="false"
+            android:singleLine="true"
+            android:textColorHint="@color/white"
+            android:id="@+id/et_search"
+            android:background="@drawable/search_shape"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="请输入景点关键字"
+            android:textColor="@color/white"
+            android:paddingLeft="@dimen/d_10"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:onClick="doSearch"
+            android:id="@+id/iv_search"
+            android:padding="@dimen/d_10"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_search"
+            android:layout_marginRight="@dimen/d_10"
+            />
+    </LinearLayout>
+
+</LinearLayout>

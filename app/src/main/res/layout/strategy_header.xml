@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/green"
+    android:layout_width="match_parent"
+    android:layout_height="55dp">
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="@dimen/d_30"
+        android:layout_width="match_parent"
+        android:background="@drawable/search_shape"
+        android:layout_height="40dp">
+        <EditText
+            android:singleLine="true"
+            android:cursorVisible="false"
+            android:textColorHint="@color/white"
+            android:id="@+id/et_search"
+            android:background="@drawable/search_shape"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="搜索目的地"
+            android:textColor="@color/white"
+            android:paddingLeft="@dimen/d_20"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:onClick="doSearch"
+            android:id="@+id/iv_search"
+            android:padding="@dimen/d_10"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_search"
+            android:layout_marginRight="@dimen/d_10"
+            />
+    </LinearLayout>
+</RelativeLayout>

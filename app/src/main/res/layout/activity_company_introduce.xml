@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="100"
+        android:textSize="@dimen/s_25"
+        android:text="关于景典游
+
+景典游是景典传媒旗下手机旅游应用平台。定位于4A及以上高端景区产品领域，以“智慧您的旅游”为发展方向，致力于提供景区目的地相关优质产品和服务。
+
+景典游专注于为您提供景区目的地旅游相关一站式服务，解决您旅游方面：景点选择、攻略推荐、门票及住宿购买、目的地租车、景区导游导览等相关专业服务。让您的旅行更便捷、舒适。
+
+景典游秉承“诚信、激情、创新、共赢”的企业发展理念，坚持用户需求为目标导向，努力成为您体验最贴心、服务最优质、价钱最优惠的旅游电子商务平台。
+
+
+
+为什么选择我们？
+
+1、 品质之选：4A及以上高端产品定位，国内外知名景区合作，目的地服务设施品质保证，成全您的优质之旅！
+
+2、 便捷之选：目的地攻略推荐、资讯导读、门票预订、景区导览、租车导航等，众多服务一应俱全，方便您的休闲度假！
+
+3、 优惠之选：景区门票超值特惠；会员消费专享现金券，不限时间、不限产品、全网通用无局限，让您得到实实在在的优惠！
+
+
+
+关注我们
+
+联系方式(qq)：2241724957；1460100197
+
+微信公众号：jdcmjdy
+
+微信搜索订阅号“景典游”关注我们，开启您的智慧之旅！"
+        android:padding="@dimen/d_10"
+        />
+</ScrollView>

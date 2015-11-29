@@ -1,0 +1,1244 @@
+{
+  "": "",
+  "data": [
+    {
+      "cityFirstChar": "A",
+      "cityList": [
+        {
+          "showName": "阿坝藏族羌族自治州(四川)",
+          "cityCode": "253"
+        },
+        {
+          "showName": "安康(陕西)",
+          "cityCode": "296"
+        },
+        {
+          "showName": "阿克苏地区(新疆)",
+          "cityCode": "332"
+        },
+        {
+          "showName": "阿拉善盟(内蒙古)",
+          "cityCode": "36"
+        },
+        {
+          "showName": "阿勒泰地区(新疆)",
+          "cityCode": "338"
+        },
+        {
+          "showName": "安庆(安徽)",
+          "cityCode": "105"
+        },
+        {
+          "showName": "鞍山(辽宁)",
+          "cityCode": "39"
+        },
+        {
+          "showName": "安顺(贵州)",
+          "cityCode": "259"
+        },
+        {
+          "showName": "安阳(河南)",
+          "cityCode": "156"
+        }
+      ]
+    },
+    {
+      "cityFirstChar": "B",
+      "cityList": [
+        {
+          "showName": "蚌埠(安徽)",
+          "cityCode": "100"
+        },
+        {
+          "showName": "保定(河北)",
+          "cityCode": "8"
+        },
+        {
+          "showName": "北海(广西)",
+          "cityCode": "222"
+        },
+        {
+          "showName": "北京",
+          "cityCode": "1"
+        },
+        {
+          "showName": "宝鸡(陕西)",
+          "cityCode": "290"
+        },
+        {
+          "showName": "毕节地区(贵州)",
+          "cityCode": "262"
+        },
+        {
+          "showName": "白山(吉林)",
+          "cityCode": "56"
+        },
+        {
+          "showName": "保山(云南)",
+          "cityCode": "268"
+        },
+        {
+          "showName": "百色(广西)",
+          "cityCode": "227"
+        },
+        {
+          "showName": "包头(内蒙古)",
+          "cityCode": "26"
+        },
+        {
+          "showName": "本溪(辽宁)",
+          "cityCode": "41"
+        },
+        {
+          "showName": "巴中(四川)",
+          "cityCode": "251"
+        },
+        {
+          "showName": "滨州(山东)",
+          "cityCode": "150"
+        },
+        {
+          "showName": "亳州(安徽)",
+          "cityCode": "112"
+        }
+      ]
+    },
+    {
+      "cityFirstChar": "C",
+      "cityList": [
+        {
+          "showName": "成都(四川)",
+          "cityCode": "235"
+        },
+        {
+          "showName": "承德(河北)",
+          "cityCode": "10"
+        },
+        {
+          "showName": "常德(湖南)",
+          "cityCode": "189"
+        },
+        {
+          "showName": "赤峰(内蒙古)",
+          "cityCode": "28"
+        },
+        {
+          "showName": "巢湖(安徽)",
+          "cityCode": "110"
+        },
+        {
+          "showName": "昌吉回族自治州(新疆)",
+          "cityCode": "329"
+        },
+        {
+          "showName": "重庆",
+          "cityCode": "234"
+        },
+        {
+          "showName": "楚雄彝族自治州(云南)",
+          "cityCode": "273"
+        },
+        {
+          "showName": "朝阳(辽宁)",
+          "cityCode": "49"
+        },
+        {
+          "showName": "滁州(安徽)",
+          "cityCode": "107"
+        },
+        {
+          "showName": "郴州(湖南)",
+          "cityCode": "192"
+        },
+        {
+          "showName": "常州(江苏)",
+          "cityCode": "77"
+        },
+        {
+          "showName": "崇左(广西)",
+          "cityCode": "231"
+        },
+        {
+          "showName": "沧州(河北)",
+          "cityCode": "11"
+        },
+        {
+          "showName": "池州(安徽)",
+          "cityCode": "113"
+        },
+        {
+          "showName": "潮州(广东)",
+          "cityCode": "215"
+        }
+      ]
+    },
+    {
+      "cityFirstChar": "D",
+      "cityList": [
+        {
+          "showName": "丹东(辽宁)",
+          "cityCode": "42"
+        },
+        {
+          "showName": "东莞(广东)",
+          "cityCode": "213"
+        },
+        {
+          "showName": "德宏傣族景颇族自治州(云南)",
+          "cityCode": "278"
+        },
+        {
+          "showName": "大连(辽宁)",
+          "cityCode": "38"
+        },
+        {
+          "showName": "大庆(黑龙江)",
+          "cityCode": "65"
+        },
+        {
+          "showName": "大同(山西)",
+          "cityCode": "15"
+        },
+        {
+          "showName": "定西(甘肃)",
+          "cityCode": "308"
+        },
+        {
+          "showName": "东营(山东)",
+          "cityCode": "139"
+        },
+        {
+          "showName": "德阳(四川)",
+          "cityCode": "239"
+        },
+        {
+          "showName": "德州(山东)",
+          "cityCode": "148"
+        },
+        {
+          "showName": "达州(四川)",
+          "cityCode": "249"
+        }
+      ]
+    },
+    {
+      "cityFirstChar": "E",
+      "cityList": [
+        {
+          "showName": "鄂尔多斯(内蒙古)",
+          "cityCode": "30"
+        },
+        {
+          "showName": "恩施(湖北)",
+          "cityCode": "181"
+        }
+      ]
+    },
+    {
+      "cityFirstChar": "F",
+      "cityList": [
+        {
+          "showName": "防城港(广西)",
+          "cityCode": "223"
+        },
+        {
+          "showName": "佛山(广东)",
+          "cityCode": "202"
+        },
+        {
+          "showName": "抚顺(辽宁)",
+          "cityCode": "40"
+        },
+        {
+          "showName": "阜新(辽宁)",
+          "cityCode": "45"
+        },
+        {
+          "showName": "阜阳(安徽)",
+          "cityCode": "108"
+        },
+        {
+          "showName": "福州(福建)",
+          "cityCode": "115"
+        },
+        {
+          "showName": "抚州(江西)",
+          "cityCode": "133"
+        }
+      ]
+    },
+    {
+      "cityFirstChar": "G",
+      "cityList": [
+        {
+          "showName": "广安(四川)",
+          "cityCode": "248"
+        },
+        {
+          "showName": "贵港(广西)",
+          "cityCode": "225"
+        },
+        {
+          "showName": "桂林(广西)",
+          "cityCode": "220"
+        },
+        {
+          "showName": "贵阳(贵州)",
+          "cityCode": "256"
+        },
+        {
+          "showName": "广元(四川)",
+          "cityCode": "241"
+        },
+        {
+          "showName": "广州(广东)",
+          "cityCode": "197"
+        },
+        {
+          "showName": "赣州(江西)",
+          "cityCode": "130"
+        },
+        {
+          "showName": "甘孜藏族自治州(四川)",
+          "cityCode": "254"
+        }
+      ]
+    },
+    {
+      "cityFirstChar": "H",
+      "cityList": [
+        {
+          "showName": "淮安(江苏)",
+          "cityCode": "81"
+        },
+        {
+          "showName": "海北藏族自治州(青海)",
+          "cityCode": "314"
+        },
+        {
+          "showName": "河池(广西)",
+          "cityCode": "229"
+        },
+        {
+          "showName": "邯郸(河北)",
+          "cityCode": "6"
+        },
+        {
+          "showName": "海东地区(青海)",
+          "cityCode": "313"
+        },
+        {
+          "showName": "哈尔滨(黑龙江)",
+          "cityCode": "60"
+        },
+        {
+          "showName": "合肥(安徽)",
+          "cityCode": "98"
+        },
+        {
+          "showName": "黄冈(湖北)",
+          "cityCode": "178"
+        },
+        {
+          "showName": "怀化(湖南)",
+          "cityCode": "194"
+        },
+        {
+          "showName": "红河哈尼族彝族自治州(云南)",
+          "cityCode": "274"
+        },
+        {
+          "showName": "呼和浩特(内蒙古)",
+          "cityCode": "25"
+        },
+        {
+          "showName": "海口(海南)",
+          "cityCode": "232"
+        },
+        {
+          "showName": "呼伦贝尔(内蒙古)",
+          "cityCode": "31"
+        },
+        {
+          "showName": "葫芦岛(辽宁)",
+          "cityCode": "50"
+        },
+        {
+          "showName": "海南藏族自治州(青海)",
+          "cityCode": "316"
+        },
+        {
+          "showName": "黄山(安徽)",
+          "cityCode": "106"
+        },
+        {
+          "showName": "黄石(湖北)",
+          "cityCode": "170"
+        },
+        {
+          "showName": "河源(广东)",
+          "cityCode": "210"
+        },
+        {
+          "showName": "衡阳(湖南)",
+          "cityCode": "186"
+        },
+        {
+          "showName": "杭州(浙江)",
+          "cityCode": "87"
+        },
+        {
+          "showName": "湖州(浙江)",
+          "cityCode": "91"
+        },
+        {
+          "showName": "惠州(广东)",
+          "cityCode": "207"
+        },
+        {
+          "showName": "贺州(广西)",
+          "cityCode": "228"
+        },
+        {
+          "showName": "汉中(陕西)",
+          "cityCode": "294"
+        },
+        {
+          "showName": "荷泽(山东)",
+          "cityCode": "151"
+        }
+      ]
+    },
+    {
+      "cityFirstChar": "J",
+      "cityList": [
+        {
+          "showName": "吉安(江西)",
+          "cityCode": "131"
+        },
+        {
+          "showName": "晋城(山西)",
+          "cityCode": "18"
+        },
+        {
+          "showName": "景德镇(江西)",
+          "cityCode": "125"
+        },
+        {
+          "showName": "金华(浙江)",
+          "cityCode": "93"
+        },
+        {
+          "showName": "九江(江西)",
+          "cityCode": "127"
+        },
+        {
+          "showName": "吉林",
+          "cityCode": "52"
+        },
+        {
+          "showName": "荆门(湖北)",
+          "cityCode": "175"
+        },
+        {
+          "showName": "江门(广东)",
+          "cityCode": "203"
+        },
+        {
+          "showName": "济南(山东)",
+          "cityCode": "135"
+        },
+        {
+          "showName": "济宁(山东)",
+          "cityCode": "142"
+        },
+        {
+          "showName": "酒泉(甘肃)",
+          "cityCode": "306"
+        },
+        {
+          "showName": "嘉兴(浙江)",
+          "cityCode": "90"
+        },
+        {
+          "showName": "鸡西(黑龙江)",
+          "cityCode": "62"
+        },
+        {
+          "showName": "揭阳(广东)",
+          "cityCode": "216"
+        },
+        {
+          "showName": "嘉峪关(甘肃)",
+          "cityCode": "299"
+        },
+        {
+          "showName": "晋中(山西)",
+          "cityCode": "20"
+        },
+        {
+          "showName": "焦作(河南)",
+          "cityCode": "159"
+        },
+        {
+          "showName": "荆州(湖北)",
+          "cityCode": "177"
+        },
+        {
+          "showName": "锦州(辽宁)",
+          "cityCode": "43"
+        }
+      ]
+    },
+    {
+      "cityFirstChar": "K",
+      "cityList": [
+        {
+          "showName": "开封(河南)",
+          "cityCode": "153"
+        },
+        {
+          "showName": "昆明(云南)",
+          "cityCode": "265"
+        }
+      ]
+    },
+    {
+      "cityFirstChar": "L",
+      "cityList": [
+        {
+          "showName": "六安(安徽)",
+          "cityCode": "111"
+        },
+        {
+          "showName": "来宾(广西)",
+          "cityCode": "230"
+        },
+        {
+          "showName": "聊城(山东)",
+          "cityCode": "149"
+        },
+        {
+          "showName": "娄底(湖南)",
+          "cityCode": "195"
+        },
+        {
+          "showName": "廊坊(河北)",
+          "cityCode": "12"
+        },
+        {
+          "showName": "临汾(山西)",
+          "cityCode": "23"
+        },
+        {
+          "showName": "漯河(河南)",
+          "cityCode": "162"
+        },
+        {
+          "showName": "丽江(云南)",
+          "cityCode": "270"
+        },
+        {
+          "showName": "吕梁(山西)",
+          "cityCode": "24"
+        },
+        {
+          "showName": "陇南(甘肃)",
+          "cityCode": "309"
+        },
+        {
+          "showName": "六盘水(贵州)",
+          "cityCode": "257"
+        },
+        {
+          "showName": "乐山(四川)",
+          "cityCode": "244"
+        },
+        {
+          "showName": "丽水(浙江)",
+          "cityCode": "97"
+        },
+        {
+          "showName": "拉萨(西藏)",
+          "cityCode": "281"
+        },
+        {
+          "showName": "凉山彝族自治州(四川)",
+          "cityCode": "255"
+        },
+        {
+          "showName": "莱芜(山东)",
+          "cityCode": "146"
+        },
+        {
+          "showName": "辽阳(辽宁)",
+          "cityCode": "46"
+        },
+        {
+          "showName": "临沂(山东)",
+          "cityCode": "147"
+        },
+        {
+          "showName": "洛阳(河南)",
+          "cityCode": "154"
+        },
+        {
+          "showName": "龙岩(福建)",
+          "cityCode": "122"
+        },
+        {
+          "showName": "连云港(江苏)",
+          "cityCode": "80"
+        },
+        {
+          "showName": "柳州(广西)",
+          "cityCode": "219"
+        },
+        {
+          "showName": "泸州(四川)",
+          "cityCode": "238"
+        },
+        {
+          "showName": "兰州(甘肃)",
+          "cityCode": "298"
+        },
+        {
+          "showName": "林芝地区(西藏)",
+          "cityCode": "287"
+        }
+      ]
+    },
+    {
+      "cityFirstChar": "M",
+      "cityList": [
+        {
+          "showName": "马鞍山(安徽)",
+          "cityCode": "102"
+        },
+        {
+          "showName": "牡丹江(黑龙江)",
+          "cityCode": "69"
+        },
+        {
+          "showName": "茂名(广东)",
+          "cityCode": "205"
+        },
+        {
+          "showName": "眉山(四川)",
+          "cityCode": "246"
+        },
+        {
+          "showName": "绵阳(四川)",
+          "cityCode": "240"
+        },
+        {
+          "showName": "梅州(广东)",
+          "cityCode": "208"
+        }
+      ]
+    },
+    {
+      "cityFirstChar": "N",
+      "cityList": [
+        {
+          "showName": "宁波(浙江)",
+          "cityCode": "88"
+        },
+        {
+          "showName": "南充(四川)",
+          "cityCode": "245"
+        },
+        {
+          "showName": "南昌(江西)",
+          "cityCode": "124"
+        },
+        {
+          "showName": "宁德(福建)",
+          "cityCode": "123"
+        },
+        {
+          "showName": "南京(江苏)",
+          "cityCode": "74"
+        },
+        {
+          "showName": "内江(四川)",
+          "cityCode": "243"
+        },
+        {
+          "showName": "南宁(广西)",
+          "cityCode": "218"
+        },
+        {
+          "showName": "南平(福建)",
+          "cityCode": "121"
+        },
+        {
+          "showName": "南通(江苏)",
+          "cityCode": "79"
+        },
+        {
+          "showName": "南阳(河南)",
+          "cityCode": "164"
+        }
+      ]
+    },
+    {
+      "cityFirstChar": "P",
+      "cityList": [
+        {
+          "showName": "平顶山(河南)",
+          "cityCode": "155"
+        },
+        {
+          "showName": "平凉(甘肃)",
+          "cityCode": "305"
+        },
+        {
+          "showName": "莆田(福建)",
+          "cityCode": "117"
+        },
+        {
+          "showName": "萍乡(江西)",
+          "cityCode": "126"
+        },
+        {
+          "showName": "濮阳(河南)",
+          "cityCode": "160"
+        },
+        {
+          "showName": "攀枝花(四川)",
+          "cityCode": "237"
+        }
+      ]
+    },
+    {
+      "cityFirstChar": "Q",
+      "cityList": [
+        {
+          "showName": "青岛(山东)",
+          "cityCode": "136"
+        },
+        {
+          "showName": "黔东南苗族侗族自治州(贵州)",
+          "cityCode": "263"
+        },
+        {
+          "showName": "秦皇岛(河北)",
+          "cityCode": "5"
+        },
+        {
+          "showName": "曲靖(云南)",
+          "cityCode": "266"
+        },
+        {
+          "showName": "黔南布依族苗族自治州(贵州)",
+          "cityCode": "264"
+        },
+        {
+          "showName": "黔西南布依族苗族自治州(贵州)",
+          "cityCode": "261"
+        },
+        {
+          "showName": "清远(广东)",
+          "cityCode": "212"
+        },
+        {
+          "showName": "庆阳(甘肃)",
+          "cityCode": "307"
+        },
+        {
+          "showName": "衢州(浙江)",
+          "cityCode": "94"
+        },
+        {
+          "showName": "泉州(福建)",
+          "cityCode": "119"
+        },
+        {
+          "showName": "钦州(广西)",
+          "cityCode": "224"
+        }
+      ]
+    },
+    {
+      "cityFirstChar": "R",
+      "cityList": [
+        {
+          "showName": "日喀则地区(西藏)",
+          "cityCode": "284"
+        },
+        {
+          "showName": "日照(山东)",
+          "cityCode": "145"
+        }
+      ]
+    },
+    {
+      "cityFirstChar": "S",
+      "cityList": [
+        {
+          "showName": "韶关(广东)",
+          "cityCode": "198"
+        },
+        {
+          "showName": "上海",
+          "cityCode": "73"
+        },
+        {
+          "showName": "石家庄(河北)",
+          "cityCode": "3"
+        },
+        {
+          "showName": "商洛(陕西)",
+          "cityCode": "297"
+        },
+        {
+          "showName": "厦门(福建)",
+          "cityCode": "116"
+        },
+        {
+          "showName": "三明(福建)",
+          "cityCode": "118"
+        },
+        {
+          "showName": "思茅(云南)",
+          "cityCode": "271"
+        },
+        {
+          "showName": "三门峡(河南)",
+          "cityCode": "163"
+        },
+        {
+          "showName": "遂宁(四川)",
+          "cityCode": "242"
+        },
+        {
+          "showName": "神农架(湖北)",
+          "cityCode": "182"
+        },
+        {
+          "showName": "宿迁(江苏)",
+          "cityCode": "86"
+        },
+        {
+          "showName": "商丘(河南)",
+          "cityCode": "165"
+        },
+        {
+          "showName": "上饶(江西)",
+          "cityCode": "134"
+        },
+        {
+          "showName": "汕头(广东)",
+          "cityCode": "201"
+        },
+        {
+          "showName": "汕尾(广东)",
+          "cityCode": "209"
+        },
+        {
+          "showName": "绍兴(浙江)",
+          "cityCode": "92"
+        },
+        {
+          "showName": "邵阳(湖南)",
+          "cityCode": "187"
+        },
+        {
+          "showName": "沈阳(辽宁)",
+          "cityCode": "37"
+        },
+        {
+          "showName": "三亚(海南)",
+          "cityCode": "233"
+        },
+        {
+          "showName": "十堰(湖北)",
+          "cityCode": "171"
+        },
+        {
+          "showName": "深圳(广东)",
+          "cityCode": "199"
+        },
+        {
+          "showName": "苏州(江苏)",
+          "cityCode": "78"
+        },
+        {
+          "showName": "宿州(安徽)",
+          "cityCode": "109"
+        },
+        {
+          "showName": "随州(湖北)",
+          "cityCode": "180"
+        },
+        {
+          "showName": "石嘴山(宁夏)",
+          "cityCode": "321"
+        }
+      ]
+    },
+    {
+      "cityFirstChar": "T",
+      "cityList": [
+        {
+          "showName": "泰安(山东)",
+          "cityCode": "143"
+        },
+        {
+          "showName": "通化(吉林)",
+          "cityCode": "55"
+        },
+        {
+          "showName": "天津",
+          "cityCode": "2"
+        },
+        {
+          "showName": "吐鲁番地区(新疆)",
+          "cityCode": "327"
+        },
+        {
+          "showName": "铜仁地区(贵州)",
+          "cityCode": "260"
+        },
+        {
+          "showName": "唐山(河北)",
+          "cityCode": "4"
+        },
+        {
+          "showName": "天水(甘肃)",
+          "cityCode": "302"
+        },
+        {
+          "showName": "太原(山西)",
+          "cityCode": "14"
+        },
+        {
+          "showName": "台州(浙江)",
+          "cityCode": "96"
+        },
+        {
+          "showName": "泰州(江苏)",
+          "cityCode": "85"
+        }
+      ]
+    },
+    {
+      "cityFirstChar": "W",
+      "cityList": [
+        {
+          "showName": "潍坊(山东)",
+          "cityCode": "141"
+        },
+        {
+          "showName": "武汉(湖北)",
+          "cityCode": "169"
+        },
+        {
+          "showName": "芜湖(安徽)",
+          "cityCode": "99"
+        },
+        {
+          "showName": "威海(山东)",
+          "cityCode": "144"
+        },
+        {
+          "showName": "乌海(内蒙古)",
+          "cityCode": "27"
+        },
+        {
+          "showName": "乌兰察布(内蒙古)",
+          "cityCode": "33"
+        },
+        {
+          "showName": "乌鲁木齐(新疆)",
+          "cityCode": "325"
+        },
+        {
+          "showName": "渭南(陕西)",
+          "cityCode": "292"
+        },
+        {
+          "showName": "文山壮族苗族自治州(云南)",
+          "cityCode": "275"
+        },
+        {
+          "showName": "无锡(江苏)",
+          "cityCode": "75"
+        },
+        {
+          "showName": "温州(浙江)",
+          "cityCode": "89"
+        },
+        {
+          "showName": "梧州(广西)",
+          "cityCode": "221"
+        },
+        {
+          "showName": "吴忠(宁夏)",
+          "cityCode": "322"
+        }
+      ]
+    },
+    {
+      "cityFirstChar": "X",
+      "cityList": [
+        {
+          "showName": "西安(陕西)",
+          "cityCode": "288"
+        },
+        {
+          "showName": "宣城(安徽)",
+          "cityCode": "114"
+        },
+        {
+          "showName": "许昌(河南)",
+          "cityCode": "161"
+        },
+        {
+          "showName": "襄樊(湖北)",
+          "cityCode": "173"
+        },
+        {
+          "showName": "孝感(湖北)",
+          "cityCode": "176"
+        },
+        {
+          "showName": "锡林郭勒盟(内蒙古)",
+          "cityCode": "35"
+        },
+        {
+          "showName": "咸宁(湖北)",
+          "cityCode": "179"
+        },
+        {
+          "showName": "西宁(青海)",
+          "cityCode": "312"
+        },
+        {
+          "showName": "西双版纳傣族自治州(云南)",
+          "cityCode": "276"
+        },
+        {
+          "showName": "邢台(河北)",
+          "cityCode": "7"
+        },
+        {
+          "showName": "湘潭(湖南)",
+          "cityCode": "185"
+        },
+        {
+          "showName": "新乡(河南)",
+          "cityCode": "158"
+        },
+        {
+          "showName": "湘西土家族苗族自治州(湖南)",
+          "cityCode": "196"
+        },
+        {
+          "showName": "信阳(河南)",
+          "cityCode": "166"
+        },
+        {
+          "showName": "咸阳(陕西)",
+          "cityCode": "291"
+        },
+        {
+          "showName": "新余(江西)",
+          "cityCode": "128"
+        },
+        {
+          "showName": "忻州(山西)",
+          "cityCode": "22"
+        },
+        {
+          "showName": "徐州(江苏)",
+          "cityCode": "76"
+        }
+      ]
+    },
+    {
+      "cityFirstChar": "Y",
+      "cityList": [
+        {
+          "showName": "雅安(四川)",
+          "cityCode": "250"
+        },
+        {
+          "showName": "延安(陕西)",
+          "cityCode": "293"
+        },
+        {
+          "showName": "宜宾(四川)",
+          "cityCode": "247"
+        },
+        {
+          "showName": "延边朝鲜族自治州(吉林)",
+          "cityCode": "59"
+        },
+        {
+          "showName": "银川(宁夏)",
+          "cityCode": "320"
+        },
+        {
+          "showName": "宜昌(湖北)",
+          "cityCode": "172"
+        },
+        {
+          "showName": "伊春(黑龙江)",
+          "cityCode": "66"
+        },
+        {
+          "showName": "运城(山西)",
+          "cityCode": "21"
+        },
+        {
+          "showName": "宜春(江西)",
+          "cityCode": "132"
+        },
+        {
+          "showName": "盐城(江苏)",
+          "cityCode": "82"
+        },
+        {
+          "showName": "云浮(广东)",
+          "cityCode": "217"
+        },
+        {
+          "showName": "阳江(广东)",
+          "cityCode": "211"
+        },
+        {
+          "showName": "营口(辽宁)",
+          "cityCode": "44"
+        },
+        {
+          "showName": "玉林(广西)",
+          "cityCode": "226"
+        },
+        {
+          "showName": "阳泉(山西)",
+          "cityCode": "16"
+        },
+        {
+          "showName": "烟台(山东)",
+          "cityCode": "140"
+        },
+        {
+          "showName": "鹰潭(江西)",
+          "cityCode": "129"
+        },
+        {
+          "showName": "玉溪(云南)",
+          "cityCode": "267"
+        },
+        {
+          "showName": "岳阳(湖南)",
+          "cityCode": "188"
+        },
+        {
+          "showName": "益阳(湖南)",
+          "cityCode": "191"
+        },
+        {
+          "showName": "扬州(江苏)",
+          "cityCode": "83"
+        },
+        {
+          "showName": "永州(湖南)",
+          "cityCode": "193"
+        }
+      ]
+    },
+    {
+      "cityFirstChar": "Z",
+      "cityList": [
+        {
+          "showName": "淄博(山东)",
+          "cityCode": "137"
+        },
+        {
+          "showName": "长春(吉林)",
+          "cityCode": "51"
+        },
+        {
+          "showName": "自贡(四川)",
+          "cityCode": "236"
+        },
+        {
+          "showName": "珠海(广东)",
+          "cityCode": "200"
+        },
+        {
+          "showName": "湛江(广东)",
+          "cityCode": "204"
+        },
+        {
+          "showName": "镇江(江苏)",
+          "cityCode": "84"
+        },
+        {
+          "showName": "张家界(湖南)",
+          "cityCode": "190"
+        },
+        {
+          "showName": "张家口(河北)",
+          "cityCode": "9"
+        },
+        {
+          "showName": "驻马店(河南)",
+          "cityCode": "168"
+        },
+        {
+          "showName": "肇庆(广东)",
+          "cityCode": "206"
+        },
+        {
+          "showName": "长沙(湖南)",
+          "cityCode": "183"
+        },
+        {
+          "showName": "舟山(浙江)",
+          "cityCode": "95"
+        },
+        {
+          "showName": "中山(广东)",
+          "cityCode": "214"
+        },
+        {
+          "showName": "中卫(宁夏)",
+          "cityCode": "324"
+        },
+        {
+          "showName": "张掖(甘肃)",
+          "cityCode": "304"
+        },
+        {
+          "showName": "遵义(贵州)",
+          "cityCode": "258"
+        },
+        {
+          "showName": "漳州(福建)",
+          "cityCode": "120"
+        },
+        {
+          "showName": "郑州(河南)",
+          "cityCode": "152"
+        },
+        {
+          "showName": "长治(山西)",
+          "cityCode": "17"
+        },
+        {
+          "showName": "株洲(湖南)",
+          "cityCode": "184"
+        },
+        {
+          "showName": "枣庄(山东)",
+          "cityCode": "138"
+        }
+      ]
+    }
+  ],
+  "resultStatus": "0"
+}

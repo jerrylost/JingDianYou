@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll_hotel_item">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/d_5">
+
+        <com.pqc.jingdianyou.view.RoundImageView
+            android:id="@+id/img_scenic_hotel_picture"
+            android:layout_width="@dimen/d_80"
+            android:layout_height="@dimen/d_80"
+            android:background="@mipmap/empty_photo" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d_5"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_scenic_hotel_cname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_5"
+                android:text="南京军区东苑宾馆"
+                android:textSize="@dimen/s_20"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_scenic_hotel_star_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="四星级"
+                android:textColor="#7b7a7a"
+                android:textSize="@dimen/s_18" />
+
+            <TextView
+                android:id="@+id/tv_scenic_hotel_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="距景典1.100km"
+                android:textColor="#7b7a7a"
+                android:textSize="@dimen/s_18" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_scenic_hotel_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/d_5"
+            android:text="¥489"
+            android:textColor="#FF4500"
+            android:textSize="@dimen/s_20" />
+    </LinearLayout>
+
+</LinearLayout>

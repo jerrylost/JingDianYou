@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/fg_scenic_header"/>
+    <com.pqc.jingdianyou.tabIndicator.SlidingTabLayout
+        android:id="@+id/st_scenic_sliding"
+        android:layout_width="match_parent"
+        android:background="@color/qian"
+        android:layout_height="@dimen/d_50"
+        >
+    </com.pqc.jingdianyou.tabIndicator.SlidingTabLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fg_scenic_vp_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

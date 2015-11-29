@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ScrollView
+        android:id="@+id/c"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:descendantFocusability="blocksDescendants"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:id="@+id/item_picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp" />
+                <TextView
+                    android:id="@+id/guides_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#FFF"
+                    />
+            </RelativeLayout>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                android:id="@+id/linearLaoyut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+            </LinearLayout>
+            </HorizontalScrollView>
+            <LinearLayout
+                android:id="@+id/mlinearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                >
+            </LinearLayout>
+            <com.pqc.jingdianyou.view.MyListView
+                android:id="@+id/lisview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+            </com.pqc.jingdianyou.view.MyListView>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/strategy_detail_head"/>
+</RelativeLayout>

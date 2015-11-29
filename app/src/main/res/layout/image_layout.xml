@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.pqc.jingdianyou.view.RoundImageView
+        android:background="@drawable/image_shape"
+        android:id="@+id/iv_guides_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        />
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/d_10"
+        android:layout_marginBottom="@dimen/d_10"
+        android:layout_alignParentBottom="true"
+        android:textSize="20sp"
+        android:id="@+id/tv_guides_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

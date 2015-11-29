@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_detail_product_pic"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@mipmap/empty_photo"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/d_5">
+
+        <ImageView
+            android:id="@+id/img_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d_5"
+            android:src="@mipmap/way_fabu_loc" />
+
+        <TextView
+            android:id="@+id/tv_scenic_address_reqirement"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="位于哪里哪里某某地"
+            android:textColor="#b6adad"
+            android:textSize="@dimen/s_18" />
+
+        <ImageView
+            android:id="@+id/img_booking_requirement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@mipmap/detail_right" />
+    </LinearLayout>
+
+    <include layout="@layout/headline_introduce" />
+
+    <LinearLayout
+        android:id="@+id/ll_travel_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/headline_travel" />
+
+        <com.pqc.jingdianyou.view.MyListView
+            android:id="@+id/lv_item_travel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <include layout="@layout/list_travel_item" />
+
+        <Button
+            android:id="@+id/btn_change_travel_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#dcdcdc"
+            android:text="查看更多"
+            android:textColor="#4e4e4e" />
+
+    </LinearLayout>
+
+    <include layout="@layout/headline_hotel" />
+
+    <LinearLayout
+        android:id="@+id/ll_recomen_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/headline_recomen" />
+
+        <include layout="@layout/list_recommend_item" />
+    </LinearLayout>
+
+
+</LinearLayout>
