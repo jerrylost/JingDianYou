@@ -10,7 +10,7 @@ import com.jerry.jingdianyou.R;
 /**
  * Created by Jerry.Zou
  */
-public class Welcome extends Activity implements Runnable
+public class WelcomeActivity extends Activity implements Runnable
 {
   @Override
   protected void onCreate(Bundle savedInstanceState)

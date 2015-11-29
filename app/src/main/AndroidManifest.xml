@@ -33,7 +33,7 @@
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="y8ACNbzX99zTZkRmseS90yf9" />
-        <activity android:name=".activity.Welcome"
+        <activity android:name=".activity.WelcomeActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
