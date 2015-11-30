@@ -26,7 +26,16 @@ public class WelcomeActivity extends Activity
   @Override
   protected void onDestroy()
   {
-    try
+    super.onDestroy();
+
+    // remove all callback and message
+    mHandler.removeCallbacksAndMessages(null);
+  }
+
+  private Handler mHandler = new Handler()
+  {
+    @Override
+    public void handleMessage(Message msg)
     {
       isFirstRun();
     }
