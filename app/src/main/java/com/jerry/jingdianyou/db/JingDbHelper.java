@@ -5,9 +5,12 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
 
 /**
- * Created by Administrator on 2015/11/17.
+ * Created by  Jerry.Zou
  */
 public class JingDbHelper extends SQLiteOpenHelper
 {
@@ -65,8 +68,11 @@ public class JingDbHelper extends SQLiteOpenHelper
     //关闭数据库与cursor
     cursor.close();
     db.close();
+
     return flag;
-
-
   }
+
+
+
+
 }

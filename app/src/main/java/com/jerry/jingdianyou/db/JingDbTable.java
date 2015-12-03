@@ -1,7 +1,7 @@
 package com.jerry.jingdianyou.db;
 
 /**
- * Created by Administrator on 2015/11/17.
+ * Created by  Jerry.Zou
  */
 public class JingDbTable
 {

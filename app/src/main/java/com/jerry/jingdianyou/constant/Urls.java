@@ -1,4 +1,4 @@
-package com.jerry.jingdianyou.url;
+package com.jerry.jingdianyou.constant;
 
 /**
  * Created by Jerry.Zou

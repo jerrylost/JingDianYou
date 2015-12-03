@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.jerry.jingdianyou.constant.App;
 import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.view.annotation.ContentView;
 import com.lidroid.xutils.view.annotation.ViewInject;
@@ -34,6 +35,7 @@ public class GuideActivity extends Activity implements ViewPager.OnPageChangeLis
   @ViewInject(R.id.guide_layout)
   private LinearLayout mLinearLayout;
 
+  //
   private List<View> mList = new LinkedList<View>();
   private SharedPreferences sp;
   private SharedPreferences.Editor edit;
@@ -45,7 +47,7 @@ public class GuideActivity extends Activity implements ViewPager.OnPageChangeLis
     super.onCreate(savedInstanceState);
     ViewUtils.inject(this);
 
-    sp = getSharedPreferences("jingdianyou", MODE_PRIVATE);
+    sp = getSharedPreferences(App.SP_NAME, MODE_PRIVATE);
     edit = sp.edit();
 
     //对跳过设置监听
@@ -54,7 +56,7 @@ public class GuideActivity extends Activity implements ViewPager.OnPageChangeLis
       @Override
       public void onClick(View v)
       {
-        edit.putBoolean("isfirst", false);
+        edit.putBoolean(App.SP_KEY_FIRST_NAME, false);
         edit.commit();
         Intent intent = new Intent(GuideActivity.this, MainActivity.class);
         startActivity(intent);
@@ -66,20 +68,28 @@ public class GuideActivity extends Activity implements ViewPager.OnPageChangeLis
     onAddView();
 
     //动态添加圆点
-    onPoint();
+    addPoints();
   }
 
-  private void onPoint()
+  /**
+   * 添加导航圆点
+   */
+  private void addPoints()
   {
     mImageViews = new ImageView[mList.size()];
+
     ImageView point = null;
+
     for (int i = 0; i < mList.size(); i++)
     {
       point = new ImageView(this);
+
       LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(20, 20);
       params.rightMargin = 10;
       point.setLayoutParams(params);
+
       mImageViews[i] = point;
+
       if (i == 0)
       {
         mImageViews[i].setImageResource(R.mipmap.ic_focus_select);
@@ -131,10 +141,12 @@ public class GuideActivity extends Activity implements ViewPager.OnPageChangeLis
         @Override
         public void onClick(View v)
         {
-          edit.putBoolean("isfirst", false);
+          edit.putBoolean(App.SP_KEY_FIRST_NAME, false);
           edit.commit();
+
           Intent intent = new Intent(GuideActivity.this, MainActivity.class);
           startActivity(intent);
+
           finish();
         }
       });

@@ -7,11 +7,8 @@ import com.lidroid.xutils.http.ResponseInfo;
 import com.lidroid.xutils.http.callback.RequestCallBack;
 import com.lidroid.xutils.http.client.HttpRequest;
 import com.jerry.jingdianyou.application.JDYApplication;
-import com.jerry.jingdianyou.url.Urls;
+import com.jerry.jingdianyou.constant.Urls;
 
-import org.apache.http.protocol.RequestDate;
-
-import java.net.URL;
 import java.util.Map;
 import java.util.Set;
 

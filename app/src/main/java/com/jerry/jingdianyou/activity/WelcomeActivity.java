@@ -8,12 +8,15 @@ import android.os.Handler;
 import android.os.Message;
 
 import com.jerry.jingdianyou.R;
+import com.jerry.jingdianyou.constant.App;
 
 /**
  * Created by Jerry.Zou
  */
 public class WelcomeActivity extends Activity
 {
+  private SharedPreferences sp = null;
+
   @Override
   protected void onCreate(Bundle savedInstanceState)
   {
@@ -44,8 +47,11 @@ public class WelcomeActivity extends Activity
   public void isFirstRun()
   {
     Intent intent = new Intent();
-    SharedPreferences sp = getSharedPreferences("jingdianyou", MODE_PRIVATE);
-    boolean isFirstRun = sp.getBoolean("isfirst", true);
+
+    sp = getSharedPreferences(App.SP_NAME, MODE_PRIVATE);
+
+    boolean isFirstRun = sp.getBoolean(App.SP_KEY_FIRST_NAME, true);
+
     if (isFirstRun)
     {
       intent.setClass(this, GuideActivity.class);
@@ -53,7 +59,6 @@ public class WelcomeActivity extends Activity
     else
     {
       intent.setClass(this, MainActivity.class);
-
     }
     startActivity(intent);
     finish();
