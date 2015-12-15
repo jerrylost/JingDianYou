@@ -52,14 +52,10 @@ import java.util.Map;
 
 /**
  * Created by Jerry.Zou
- */
-
-/**
  * 首页
  */
 public class HomeFragment extends Fragment
 {
-
   @ViewInject(R.id.vp_banner)
   private ViewPager mVpBanner;
 
@@ -162,10 +158,10 @@ public class HomeFragment extends Fragment
 
   @ViewInject(R.id.sl_home)
   private PullToRefreshScrollView mScrollView;
-  private List<Home.TopThemeData> top_theme_data = new ArrayList<>();
+  private List<Home.TopThemeData> top_theme_data = new ArrayList<Home.TopThemeData>();
   private Home.RendezvousData rendezvous_data;
   private Home.OnwayData onway_data;
-  private List<Home.AdvertLinkData> data = new ArrayList<>();
+  private List<Home.AdvertLinkData> data = new ArrayList<Home.AdvertLinkData>();
 
   @ViewInject(R.id.et_search)
   private EditText mSearchKey;
@@ -263,30 +259,28 @@ public class HomeFragment extends Fragment
 
     JDYApplication.getApp().getmImageLoader().displayImage(
         top_theme_data.get(0).getTheme_pic(), mIvPic01,
-        JDYApplication.getApp().getmOptions()
-    );
+        JDYApplication.getApp().getmOptions());
+
     JDYApplication.getApp().getmImageLoader().displayImage(
         top_theme_data.get(1).getTheme_pic(), mIvPic2,
-        JDYApplication.getApp().getmOptions()
-    );
+        JDYApplication.getApp().getmOptions());
+
     JDYApplication.getApp().getmImageLoader().displayImage(
         top_theme_data.get(2).getTheme_pic(), mIvPic03,
-        JDYApplication.getApp().getmOptions()
-    );
+        JDYApplication.getApp().getmOptions());
+
     JDYApplication.getApp().getmImageLoader().displayImage(
         top_theme_data.get(3).getTheme_pic(), mIvPic04,
-        JDYApplication.getApp().getmOptions()
-    );
+        JDYApplication.getApp().getmOptions());
 
     // 设置超值推荐
     JDYApplication.getApp().getmImageLoader().displayImage(
         top_theme_data.get(4).getTheme_pic(), mIvTop51,
-        JDYApplication.getApp().getmOptions()
-    );
+        JDYApplication.getApp().getmOptions());
+
     JDYApplication.getApp().getmImageLoader().displayImage(
         top_theme_data.get(5).getTheme_pic(), mIvTop52,
-        JDYApplication.getApp().getmOptions()
-    );
+        JDYApplication.getApp().getmOptions());
 
   }
 
