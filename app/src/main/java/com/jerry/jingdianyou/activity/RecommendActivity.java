@@ -18,7 +18,7 @@ import com.jerry.jingdianyou.R;
  * Created by Jerry.Zou
  */
 @ContentView(R.layout.activity_recomment)
-public class RecommendActivity extends Activity
+public class RecommendActivity extends BaseActivity
 {
   @ViewInject(R.id.wv_recomment)
   private WebView mWebView;

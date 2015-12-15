@@ -21,7 +21,7 @@ import java.util.Map;
  * Created by Jerry.Zou
  */
 @ContentView(R.layout.activity_strategy_webview)
-public class StrategyDetailWebView extends Activity
+public class StrategyDetailWebView extends BaseActivity
 {
   private Map<String, Object> params = new HashMap<>();
   //解析数据的参数

@@ -30,9 +30,8 @@ import java.util.List;
 import java.util.Map;
 
 @ContentView(R.layout.activity_rendezvous_detail)
-public class RendezvousDetailActivity extends Activity
+public class RendezvousDetailActivity extends BaseActivity
 {
-
   private Map<String, Object> params = new HashMap<>();
   private Map<String, Object> rendeParams = new HashMap<>();
   private Map<String, Object> commentParams = new HashMap<>();

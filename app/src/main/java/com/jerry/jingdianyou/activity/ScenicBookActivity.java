@@ -20,7 +20,7 @@ import com.jerry.jingdianyou.R;
  * Created Jerry.Zou
  */
 @ContentView(R.layout.activity_book_scenic)
-public class ScenicBookActivity extends Activity
+public class ScenicBookActivity extends BaseActivity
 {
   private String[] bookinfo = null;
   private String scenicname;

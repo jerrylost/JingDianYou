@@ -12,7 +12,7 @@ import com.jerry.jingdianyou.R;
  * Created by Jerry.Zou
  */
 @ContentView(R.layout.activity_mywalking)
-public class MyWalking extends Activity
+public class MyWalking extends BaseActivity
 {
   @Override
   protected void onCreate(Bundle savedInstanceState)

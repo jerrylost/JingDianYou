@@ -33,9 +33,8 @@ import java.util.Map;
  * Created by Jerry.Zou
  */
 @ContentView(R.layout.activity_hotel_list)
-public class HotelMoreActivity extends Activity
+public class HotelMoreActivity extends BaseActivity
 {
-
   //获取酒店信息
   private List<HotelList.Data> hotelDatas = new ArrayList<>();
   private JDYHttpConnect mHttpConnect;
@@ -45,10 +44,12 @@ public class HotelMoreActivity extends Activity
   private String mCity;
   private HotelItemAdapter mAdapter;
   private int page_index = 1;
+
   //定义请求酒店数据的参数
   //address   scenic_spot_code   end_date  min_price   keyword
   // max_price   start_date   order_by  star_level  order_type
   private String[] mHotelParams = new String[6];
+
   @ViewInject(R.id.lv_hotel_list)
   private PullToRefreshListView mLVHotel;
 

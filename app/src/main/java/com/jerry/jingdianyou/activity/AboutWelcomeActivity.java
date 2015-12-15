@@ -44,6 +44,7 @@ public class AboutWelcomeActivity extends FragmentActivity implements ViewPager.
 
     //初始化控件
     initView();
+
     //动态添加小圆点
     addPoint();
 

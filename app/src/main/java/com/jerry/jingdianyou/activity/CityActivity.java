@@ -29,7 +29,7 @@ import java.util.Map;
  * Created by Jerry.Zou
  */
 @ContentView(R.layout.activity_city_select)
-public class CityActivity extends Activity
+public class CityActivity extends BaseActivity
 {
   @ViewInject(R.id.lv_city)
   private ListView mLvCity;
@@ -47,7 +47,6 @@ public class CityActivity extends Activity
   protected void onCreate(Bundle savedInstanceState)
   {
     super.onCreate(savedInstanceState);
-    ViewUtils.inject(this);
 
     mSlideBar.setCharDialag(mDialog);
     mSlideBar.setOnSlideBarItemClickListener(new SlideBar.OnSlideBarItemClickListener()

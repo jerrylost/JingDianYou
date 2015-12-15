@@ -30,7 +30,7 @@ import java.util.Map;
  * Created by Jerry.Zou
  */
 @ContentView(R.layout.activity_chat)
-public class ChatActivity extends Activity implements View.OnClickListener
+public class ChatActivity extends BaseActivity implements View.OnClickListener
 {
   @ViewInject(R.id.lv_chat)
   private ListView mLvChat;
@@ -43,7 +43,6 @@ public class ChatActivity extends Activity implements View.OnClickListener
   protected void onCreate(Bundle savedInstanceState)
   {
     super.onCreate(savedInstanceState);
-    ViewUtils.inject(this);
     initView();
     loadData();
   }

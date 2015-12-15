@@ -1,6 +1,5 @@
 package com.jerry.jingdianyou.activity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -13,7 +12,7 @@ import com.lidroid.xutils.view.annotation.ContentView;
  * Created by Jerry.Zou
  */
 @ContentView(R.layout.activity_about_we)
-public class AboutWeActivity extends Activity
+public class AboutWeActivity extends BaseActivity
 {
   @Override
   protected void onCreate(Bundle savedInstanceState)

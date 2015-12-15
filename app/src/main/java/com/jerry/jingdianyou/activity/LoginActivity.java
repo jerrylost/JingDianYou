@@ -13,7 +13,7 @@ import com.jerry.jingdianyou.R;
  * Created by Jerry.Zou
  */
 
-public class LoginActivity extends Activity
+public class LoginActivity extends BaseActivity
 {
   @Override
   protected void onCreate(Bundle savedInstanceState)

@@ -13,7 +13,7 @@ import com.jerry.jingdianyou.R;
  * Created by Jerry.Zou
  */
 @ContentView(R.layout.page_signup)
-public class PersonMessage extends Activity
+public class PersonMessage extends BaseActivity
 {
   @Override
   protected void onCreate(Bundle savedInstanceState)

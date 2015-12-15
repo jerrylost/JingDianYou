@@ -19,9 +19,8 @@ import com.jerry.jingdianyou.R;
  * Created by Jerry.Zou
  */
 @ContentView(R.layout.activity_requirement)
-public class RequirementActivtiy extends Activity
+public class RequirementActivtiy extends BaseActivity
 {
-
   @ViewInject(R.id.ll_business_hours)
   private LinearLayout mll_business_hours;
 

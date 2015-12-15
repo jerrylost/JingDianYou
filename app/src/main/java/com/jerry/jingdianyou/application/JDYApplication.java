@@ -3,6 +3,7 @@ package com.jerry.jingdianyou.application;
 import android.app.Application;
 import android.os.Environment;
 
+import com.baidu.mapapi.SDKInitializer;
 import com.jerry.jingdianyou.R;
 import com.lidroid.xutils.HttpUtils;
 import com.nostra13.universalimageloader.cache.disc.impl.UnlimitedDiskCache;
@@ -40,6 +41,10 @@ public class JDYApplication extends Application
   {
     super.onCreate();
     app = this;
+
+    //百度SDK初始化
+    SDKInitializer.initialize(this);
+
     initHttpUtils();
     initImageLoader();
   }

@@ -38,7 +38,7 @@ import java.util.Map;
  * Created by Jerry.Zou
  */
 @ContentView(R.layout.strategy_detail)
-public class StrategyDetailActivity extends Activity implements View.OnTouchListener
+public class StrategyDetailActivity extends BaseActivity implements View.OnTouchListener
 {
   //图片
   @ViewInject(R.id.item_picture)

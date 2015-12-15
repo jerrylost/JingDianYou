@@ -34,7 +34,7 @@ import java.util.Map;
  * Created by Jerry.Zou
  */
 @ContentView(R.layout.activity_onway_detail)
-public class OnWayDetailActivity extends Activity
+public class OnWayDetailActivity extends BaseActivity
 {
   @ViewInject(R.id.lv_onway_detail)
   private ListView mListView;

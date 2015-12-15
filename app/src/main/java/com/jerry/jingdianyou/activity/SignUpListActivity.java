@@ -21,7 +21,7 @@ import java.util.List;
  * Created by Jerry.Zou
  */
 @ContentView(R.layout.activity_sign_up)
-public class SignUpListActivity extends Activity
+public class SignUpListActivity extends BaseActivity
 {
   @ViewInject(R.id.lv_sign_up)
   private ListView mListView;

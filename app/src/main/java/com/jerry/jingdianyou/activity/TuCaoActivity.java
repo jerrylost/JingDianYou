@@ -28,8 +28,6 @@ import java.util.List;
 @ContentView(R.layout.activity_tucao)
 public class TuCaoActivity extends FragmentActivity
 {
-
-
   private List<Fragment> mFragments = new ArrayList<>();
 
   @ViewInject(R.id.st_sliding)

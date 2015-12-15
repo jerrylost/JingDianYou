@@ -105,8 +105,7 @@ public class MainActivity extends FragmentActivity implements RadioGroup.OnCheck
     int widthPixels = metrics.widthPixels;
 
     LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
-        widthPixels, ViewGroup.LayoutParams.WRAP_CONTENT
-    );
+        widthPixels, ViewGroup.LayoutParams.WRAP_CONTENT);
     mRadioGroup.setLayoutParams(params);
 
     LinearLayout.LayoutParams rbParams
@@ -159,7 +158,6 @@ public class MainActivity extends FragmentActivity implements RadioGroup.OnCheck
 
   private void initLocationClient()
   {
-
     LocationClientOption locationClientOption = new LocationClientOption();
 
     //是否打开 GPS

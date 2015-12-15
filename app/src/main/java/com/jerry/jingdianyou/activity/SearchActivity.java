@@ -31,7 +31,7 @@ import java.util.Map;
  * Created by Jerry.Zou
  */
 @ContentView(R.layout.activity_search)
-public class SearchActivity extends Activity
+public class SearchActivity extends BaseActivity
 {
   @ViewInject(R.id.et_search)
   private EditText mSearch;

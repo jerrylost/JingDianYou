@@ -11,7 +11,7 @@ import com.jerry.jingdianyou.R;
  * Created by Jerry.Zou
  */
 @ContentView(R.layout.activity_company_introduce)
-public class CompanyIntroduceActivity extends Activity
+public class CompanyIntroduceActivity extends BaseActivity
 {
   @Override
   protected void onCreate(Bundle savedInstanceState)

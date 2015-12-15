@@ -31,7 +31,7 @@ import java.util.Map;
  * Created by Jerry.Zou
  */
 @ContentView(R.layout.activity_tucao_detail)
-public class TuCaoDetailActivity extends Activity
+public class TuCaoDetailActivity extends BaseActivity
 {
   @ViewInject(R.id.lv_tocao_detail)
   private ListView mListView;

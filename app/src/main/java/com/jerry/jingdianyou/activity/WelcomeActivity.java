@@ -13,7 +13,7 @@ import com.jerry.jingdianyou.constant.App;
 /**
  * Created by Jerry.Zou
  */
-public class WelcomeActivity extends Activity
+public class WelcomeActivity extends BaseActivity
 {
   private SharedPreferences sp = null;
 

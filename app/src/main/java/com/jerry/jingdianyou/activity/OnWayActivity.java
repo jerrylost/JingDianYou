@@ -28,7 +28,7 @@ import java.util.Map;
  * Created by Jerry.Zou
  */
 @ContentView(R.layout.activity_onway)
-public class OnWayActivity extends Activity
+public class OnWayActivity extends BaseActivity
 {
   @ViewInject(R.id.lv_onway)
   private PullToRefreshListView mLvOnway;
@@ -113,7 +113,6 @@ public class OnWayActivity extends Activity
       @Override
       public void onPullUpToRefresh(PullToRefreshBase<ListView> refreshView)
       {
-
         current_onway_id = "OI000000000000000" + index;
         loadData();
         index = index - 10;

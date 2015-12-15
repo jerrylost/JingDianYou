@@ -33,7 +33,7 @@ import java.util.Map;
  * Created by Jerry.Zou
  */
 @ContentView(R.layout.activity_scenic_datail)
-public class ScenicDetailActivity extends Activity
+public class ScenicDetailActivity extends BaseActivity
 {
   //详情页面的标题上的风景名
   @ViewInject(R.id.tv_detail_scenic_name)

@@ -34,7 +34,7 @@ import java.util.Map;
  * Created by Jerry.Zou
  */
 @ContentView(R.layout.activity_rendezvous)
-public class RendezvousActivity extends Activity implements View.OnClickListener
+public class RendezvousActivity extends BaseActivity implements View.OnClickListener
 {
 
   @ViewInject(R.id.lv_rendezvous)

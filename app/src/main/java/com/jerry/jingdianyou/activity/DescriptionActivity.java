@@ -24,7 +24,7 @@ import java.util.Map;
  * Created by Jerry.Zou
  */
 @ContentView(R.layout.webv_description)
-public class DescriptionActivity extends Activity
+public class DescriptionActivity extends BaseActivity
 {
 
   @ViewInject(R.id.webv_scenic_descript)

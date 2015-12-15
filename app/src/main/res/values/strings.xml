@@ -118,4 +118,7 @@
     <string name="string_jump">跳过</string>
     <string name="string_coolect">我的收藏</string>
     <string name="exit_text_tip">再按一次退出</string>
+    <string name="title_scenic">景点</string>
+    <string name="title_strategy">攻略</string>
+    <string name="title_arrange_travel">约游</string>
 </resources>

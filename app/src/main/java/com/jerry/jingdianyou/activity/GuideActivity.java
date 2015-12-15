@@ -24,7 +24,7 @@ import java.util.List;
  * Created by Jerry.Zou
  */
 @ContentView(R.layout.activity_guide)
-public class GuideActivity extends Activity implements ViewPager.OnPageChangeListener
+public class GuideActivity extends BaseActivity implements ViewPager.OnPageChangeListener
 {
   @ViewInject(R.id.guide_text_jump)
   private TextView mJump;

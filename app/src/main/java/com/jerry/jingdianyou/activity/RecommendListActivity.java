@@ -29,9 +29,8 @@ import java.util.Map;
  */
 
 @ContentView(R.layout.activity_recommend_list)
-public class RecommendListActivity extends Activity
+public class RecommendListActivity extends BaseActivity
 {
-
   //获取酒店信息
   private List<RecommendList.Data> recomDatas = new ArrayList<>();
   private JDYHttpConnect mHttpConnect;

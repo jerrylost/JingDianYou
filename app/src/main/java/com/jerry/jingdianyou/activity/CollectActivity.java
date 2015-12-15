@@ -28,9 +28,16 @@ public class CollectActivity extends FragmentActivity
 {
   @ViewInject(R.id.collect_slidingtab)
   private SlidingTabLayout mSlidingTabLayout;
+
   @ViewInject(R.id.collect_page)
   private ViewPager mViewPager;
+
   private List<Fragment> mListFragment = new ArrayList<>();
+
+  // 显示标题
+  private String titles[] = {getString(R.string.title_scenic),
+                             getString(R.string.title_strategy),
+                             getString(R.string.title_arrange_travel)};
 
   @Override
   protected void onCreate(Bundle savedInstanceState)
@@ -44,26 +51,30 @@ public class CollectActivity extends FragmentActivity
     initView();
   }
 
+  /**
+   * 初始化视图
+   */
   private void initView()
   {
     //颜色
     mSlidingTabLayout.setSelectedIndicatorColors(getResources().getColor(R.color.green));
+
     //页面个数
     // mViewPager.setOffscreenPageLimit(4);
+
     //铺满
     mSlidingTabLayout.setDistributeEvenly(true);
+
     //加载的布局类型和数据显示的控件id
     mSlidingTabLayout.setCustomTabView(R.layout.sliding_layout, R.id.text);
+
     mViewPager.setAdapter(new Collect(getSupportFragmentManager()));
+
     mSlidingTabLayout.setViewPager(mViewPager);
-
-
   }
 
   public class Collect extends FragmentPagerAdapter
   {
-
-
     public Collect(FragmentManager fm)
     {
       super(fm);
@@ -84,9 +95,7 @@ public class CollectActivity extends FragmentActivity
     @Override
     public CharSequence getPageTitle(int position)
     {
-      String arr[] = {"景点", "攻略", "约游"};
-
-      return arr[position];
+      return titles[position];
     }
   }
 
