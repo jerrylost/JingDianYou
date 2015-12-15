@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
 
-   <include layout="@layout/list_under_line"/>
+    <include layout="@layout/list_under_line"/>
+
     <LinearLayout
         android:gravity="center_vertical"
         android:layout_width="match_parent"
         android:layout_height="@dimen/d_100">
-        <com.pqc.jingdianyou.view.CircleImageView
+
+        <com.jerry.jingdianyou.view.CircleImageView
             android:id="@+id/iv_rendezvous_photo"
             android:layout_marginLeft="@dimen/d_5"
             android:scaleType="centerCrop"
             android:src="@mipmap/ic_launcher"
             android:layout_width="@dimen/d_80"
-            android:layout_height="@dimen/d_80" />
+            android:layout_height="@dimen/d_80"/>
+
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <TextView
                 android:id="@+id/tv_rendezvous_name"
                 android:padding="@dimen/d_10"
@@ -28,6 +32,7 @@
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 />
+
             <TextView
                 android:id="@+id/tv_rendezvous_sex"
                 android:layout_marginLeft="@dimen/d_10"
@@ -36,24 +41,28 @@
                 android:textColor="@color/white"
                 android:paddingLeft="@dimen/d_5"
                 android:layout_width="55dp"
-                android:layout_height="20dp" />
+                android:layout_height="20dp"/>
         </LinearLayout>
     </LinearLayout>
+
     <View
         android:layout_marginLeft="@dimen/d_10"
         android:layout_width="match_parent"
         android:layout_height="0.1dp"
         android:background="@color/qianhui"/>
+
     <LinearLayout
         android:paddingLeft="@dimen/d_10"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <LinearLayout
             android:padding="@dimen/d_5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <com.pqc.jingdianyou.view.RoundImageView
+
+            <com.jerry.jingdianyou.view.RoundImageView
                 android:background="@drawable/image_shape"
                 android:layout_gravity="center_vertical"
                 android:scaleType="fitXY"
@@ -61,12 +70,14 @@
                 android:layout_height="@dimen/d_10"
                 android:src="@mipmap/bottom"
                 />
+
             <TextView
                 android:layout_marginLeft="@dimen/d_5"
                 android:layout_width="@dimen/d_55"
                 android:layout_height="wrap_content"
                 android:text="@string/string_destination"
                 />
+
             <TextView
                 android:id="@+id/tv_rendezvous_destination"
                 android:textColor="@color/green"
@@ -75,11 +86,13 @@
                 android:layout_height="wrap_content"
                 />
         </LinearLayout>
+
         <LinearLayout
             android:padding="@dimen/d_5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <com.pqc.jingdianyou.view.RoundImageView
+
+            <com.jerry.jingdianyou.view.RoundImageView
                 android:background="@drawable/image_shape"
                 android:layout_gravity="center_vertical"
                 android:scaleType="fitXY"
@@ -87,12 +100,14 @@
                 android:layout_height="@dimen/d_10"
                 android:src="@mipmap/bottom"
                 />
+
             <TextView
                 android:layout_marginLeft="@dimen/d_5"
                 android:layout_width="@dimen/d_55"
                 android:layout_height="wrap_content"
                 android:text="@string/string_date"
                 />
+
             <TextView
                 android:id="@+id/tv_rendezvous_date"
                 android:textColor="@color/shen_black"
@@ -101,11 +116,13 @@
                 android:layout_height="wrap_content"
                 />
         </LinearLayout>
+
         <LinearLayout
             android:padding="@dimen/d_5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <com.pqc.jingdianyou.view.RoundImageView
+
+            <com.jerry.jingdianyou.view.RoundImageView
                 android:background="@drawable/image_shape"
                 android:layout_gravity="center_vertical"
                 android:scaleType="fitXY"
@@ -113,12 +130,14 @@
                 android:layout_height="@dimen/d_10"
                 android:src="@mipmap/bottom"
                 />
+
             <TextView
                 android:layout_marginLeft="@dimen/d_5"
                 android:layout_width="@dimen/d_55"
                 android:layout_height="wrap_content"
                 android:text="@string/string_detail"
                 />
+
             <TextView
                 android:id="@+id/tv_rendezvous_detail"
                 android:textColor="@color/shen_black"
@@ -128,11 +147,14 @@
                 />
         </LinearLayout>
     </LinearLayout>
+
     <include layout="@layout/list_under_line"/>
+
     <RelativeLayout
         android:paddingLeft="@dimen/d_10"
         android:layout_width="match_parent"
         android:layout_height="@dimen/d_40">
+
         <TextView
             android:id="@+id/tv_signup_amount"
             android:gravity="center"
@@ -140,16 +162,19 @@
             android:layout_height="match_parent"
 
             />
+
         <LinearLayout
             android:layout_alignParentRight="true"
             android:layout_width="wrap_content"
             android:layout_height="match_parent">
+
             <ImageView
                 android:layout_gravity="center_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@mipmap/com_zan"
-            />
+                />
+
             <TextView
                 android:id="@+id/tv_praise_amount"
                 android:layout_marginLeft="@dimen/d_5"
@@ -158,6 +183,7 @@
                 android:layout_height="wrap_content"
 
                 />
+
             <ImageView
                 android:layout_marginTop="@dimen/d_5"
                 android:layout_marginLeft="@dimen/d_10"
@@ -166,6 +192,7 @@
                 android:layout_height="wrap_content"
                 android:src="@mipmap/com_ping"
                 />
+
             <TextView
                 android:id="@+id/tv_comment_amount"
                 android:layout_marginRight="@dimen/d_10"
@@ -176,7 +203,9 @@
                 />
         </LinearLayout>
     </RelativeLayout>
+
     <include layout="@layout/list_under_line"/>
+
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/d_10"

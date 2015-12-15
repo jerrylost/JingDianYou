@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
-    android:background="#1bbb9a"
-    android:layout_width="match_parent"
-    android:layout_height="55dp">
+              android:orientation="horizontal"
+              android:background="#1bbb9a"
+              android:layout_width="match_parent"
+              android:layout_height="55dp">
+
     <LinearLayout
         android:layout_gravity="center_vertical"
         android:layout_marginLeft="30dp"
@@ -11,6 +12,7 @@
         android:layout_weight="1"
         android:background="@drawable/search_shape"
         android:layout_height="40dp">
+
         <EditText
             android:singleLine="true"
             android:id="@+id/et_search"
@@ -22,7 +24,8 @@
             android:textColor="@color/white"
             android:textCursorDrawable="@null"
             android:paddingLeft="@dimen/d_20"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"/>
+
         <ImageView
             android:id="@+id/iv_search"
             android:padding="@dimen/d_10"
@@ -32,6 +35,7 @@
             android:layout_marginRight="@dimen/d_10"
             />
     </LinearLayout>
+
     <Button
         android:id="@+id/btn_allcity"
         android:padding="@dimen/d_10"

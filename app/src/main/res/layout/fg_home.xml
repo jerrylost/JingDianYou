@@ -1,35 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
     <include layout="@layout/main_header"/>
+
     <com.handmark.pulltorefresh.library.PullToRefreshScrollView
         android:id="@+id/sl_home"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <include layout="@layout/banner_layout"/>
+
             <include layout="@layout/under_line"/>
+
             <include layout="@layout/headline_recommend"/>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <RelativeLayout
                     android:layout_marginLeft="@dimen/d_5"
                     android:layout_marginRight="@dimen/d_5"
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_height="100dp" >
-                    <com.pqc.jingdianyou.view.RoundImageView
+                    android:layout_height="100dp">
+
+                    <com.jerry.jingdianyou.view.RoundImageView
                         android:background="@drawable/image_shape"
                         android:id="@+id/iv_theme_pic_01"
                         android:scaleType="centerCrop"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
+                        android:layout_height="match_parent"/>
+
                     <TextView
                         android:textStyle="bold"
                         android:textColor="@color/white"
@@ -39,17 +49,20 @@
                         android:layout_height="wrap_content"
                         />
                 </RelativeLayout>
+
                 <RelativeLayout
                     android:layout_marginRight="@dimen/d_5"
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_height="100dp" >
-                    <com.pqc.jingdianyou.view.RoundImageView
+                    android:layout_height="100dp">
+
+                    <com.jerry.jingdianyou.view.RoundImageView
                         android:background="@drawable/image_shape"
                         android:id="@+id/iv_theme_pic_02"
                         android:scaleType="centerCrop"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
+                        android:layout_height="match_parent"/>
+
                     <TextView
                         android:textStyle="bold"
                         android:textColor="@color/white"
@@ -60,22 +73,26 @@
                         />
                 </RelativeLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_marginTop="@dimen/d_5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <RelativeLayout
                     android:layout_marginLeft="@dimen/d_5"
                     android:layout_marginRight="@dimen/d_5"
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_height="100dp" >
-                    <com.pqc.jingdianyou.view.RoundImageView
+                    android:layout_height="100dp">
+
+                    <com.jerry.jingdianyou.view.RoundImageView
                         android:background="@drawable/image_shape"
                         android:id="@+id/iv_theme_pic_03"
                         android:scaleType="centerCrop"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
+                        android:layout_height="match_parent"/>
+
                     <TextView
                         android:textStyle="bold"
                         android:textColor="@color/white"
@@ -85,17 +102,20 @@
                         android:layout_height="wrap_content"
                         />
                 </RelativeLayout>
+
                 <RelativeLayout
                     android:layout_marginRight="@dimen/d_5"
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_height="100dp" >
-                    <com.pqc.jingdianyou.view.RoundImageView
+                    android:layout_height="100dp">
+
+                    <com.jerry.jingdianyou.view.RoundImageView
                         android:background="@drawable/image_shape"
                         android:id="@+id/iv_theme_pic_04"
                         android:scaleType="centerCrop"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
+                        android:layout_height="match_parent"/>
+
                     <TextView
                         android:textStyle="bold"
                         android:textColor="@color/white"
@@ -106,7 +126,9 @@
                         />
                 </RelativeLayout>
             </LinearLayout>
+
             <include layout="@layout/headline_rendezvous"/>
+
             <LinearLayout
                 android:id="@+id/ll_rendezvous"
                 android:layout_marginRight="@dimen/d_5"
@@ -115,22 +137,26 @@
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <RelativeLayout
                     android:id="@+id/rl_rende"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/d_180"
                     android:background="@drawable/image_shape"
                     >
-                    <com.pqc.jingdianyou.view.RoundImageView
+
+                    <com.jerry.jingdianyou.view.RoundImageView
                         android:id="@+id/iv_photo"
                         android:background="@drawable/image_shape"
                         android:scaleType="fitXY"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
+                        android:layout_height="match_parent"/>
+
                     <LinearLayout
                         android:orientation="vertical"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
+
                         <TextView
                             android:textStyle="bold"
                             android:id="@+id/tv_destination"
@@ -140,18 +166,21 @@
                             android:textColor="@color/white"
                             android:textSize="20sp"
                             />
+
                         <LinearLayout
                             android:gravity="center_vertical"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             >
-                            <com.pqc.jingdianyou.view.CircleImageView
+
+                            <com.jerry.jingdianyou.view.CircleImageView
                                 android:scaleType="fitXY"
                                 android:id="@+id/iv_member_photo"
                                 android:layout_width="@dimen/d_50"
                                 android:layout_height="@dimen/d_50"
                                 android:layout_marginLeft="@dimen/d_10"
                                 />
+
                             <TextView
                                 android:textStyle="bold"
                                 android:layout_marginLeft="@dimen/d_5"
@@ -162,6 +191,7 @@
                                 android:layout_height="match_parent"
                                 android:textColor="@color/white"
                                 />
+
                             <TextView
                                 android:textStyle="bold"
                                 android:gravity="center_vertical"
@@ -174,6 +204,7 @@
                         </LinearLayout>
                     </LinearLayout>
                 </RelativeLayout>
+
                 <TextView
                     android:id="@+id/tv_rendezvous_content"
                     android:padding="10dp"
@@ -181,7 +212,9 @@
                     android:layout_height="wrap_content"
                     />
             </LinearLayout>
+
             <include layout="@layout/headline_on_way"/>
+
             <LinearLayout
                 android:id="@+id/ll_home_onway"
                 android:layout_marginLeft="@dimen/d_5"
@@ -190,18 +223,21 @@
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <LinearLayout
                     android:padding="@dimen/d_5"
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-                    <com.pqc.jingdianyou.view.CircleImageView
+
+                    <com.jerry.jingdianyou.view.CircleImageView
                         android:id="@+id/iv_on_way_member_photo"
                         android:layout_gravity="center_vertical"
                         android:scaleType="fitXY"
                         android:layout_width="@dimen/d_50"
                         android:layout_height="@dimen/d_50"
                         />
+
                     <TextView
                         android:id="@+id/tv_on_way_member_name"
                         android:layout_marginLeft="@dimen/d_5"
@@ -211,6 +247,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="16sp"
                         />
+
                     <TextView
                         android:id="@+id/tv_on_way_create_date"
                         android:layout_gravity="center_vertical"
@@ -219,15 +256,18 @@
                         android:layout_marginRight="@dimen/d_5"
                         />
                 </LinearLayout>
+
                 <TextView
                     android:id="@+id/tv_message_content"
                     android:padding="@dimen/d_5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     />
+
                 <HorizontalScrollView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
+
                     <LinearLayout
                         android:id="@+id/ll_on_way"
                         android:orientation="horizontal"
@@ -235,17 +275,20 @@
                         android:layout_height="wrap_content">
                     </LinearLayout>
                 </HorizontalScrollView>
+
                 <LinearLayout
                     android:paddingLeft="@dimen/d_10"
                     android:paddingBottom="@dimen/d_10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <ImageView
                         android:scaleType="centerCrop"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@mipmap/way_fabu_loc"
                         />
+
                     <TextView
                         android:id="@+id/tv_on_way_create_place"
                         android:layout_marginLeft="@dimen/d_5"
@@ -256,11 +299,14 @@
                         />
                 </LinearLayout>
             </LinearLayout>
+
             <include layout="@layout/headline_hot_recommend"/>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="100dp">
-                <com.pqc.jingdianyou.view.RoundImageView
+
+                <com.jerry.jingdianyou.view.RoundImageView
                     android:scaleType="fitXY"
                     android:id="@+id/iv_theme_pic_51"
                     android:background="@drawable/image_shape"
@@ -268,17 +314,20 @@
                     android:layout_marginRight="@dimen/d_5"
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_height="match_parent" />
-                <com.pqc.jingdianyou.view.RoundImageView
+                    android:layout_height="match_parent"/>
+
+                <com.jerry.jingdianyou.view.RoundImageView
                     android:scaleType="fitXY"
                     android:id="@+id/iv_theme_pic_52"
                     android:background="@drawable/image_shape"
                     android:layout_marginRight="@dimen/d_5"
                     android:layout_width="0dp"
                     android:layout_weight="1"
-                    android:layout_height="match_parent" />
+                    android:layout_height="match_parent"/>
             </LinearLayout>
+
             <include layout="@layout/headline_jinnang"/>
+
             <LinearLayout
                 android:layout_marginRight="@dimen/d_5"
                 android:layout_marginLeft="@dimen/d_5"

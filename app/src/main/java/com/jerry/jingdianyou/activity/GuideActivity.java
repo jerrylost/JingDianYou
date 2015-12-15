@@ -40,6 +40,7 @@ public class GuideActivity extends Activity implements ViewPager.OnPageChangeLis
   private SharedPreferences sp;
   private SharedPreferences.Editor edit;
   private ImageView[] mImageViews;
+  private int mCurrentPageN0 = 0;
 
   @Override
   protected void onCreate(Bundle savedInstanceState)
@@ -58,6 +59,7 @@ public class GuideActivity extends Activity implements ViewPager.OnPageChangeLis
       {
         edit.putBoolean(App.SP_KEY_FIRST_NAME, false);
         edit.commit();
+
         Intent intent = new Intent(GuideActivity.this, MainActivity.class);
         startActivity(intent);
         finish();
@@ -90,16 +92,11 @@ public class GuideActivity extends Activity implements ViewPager.OnPageChangeLis
 
       mImageViews[i] = point;
 
-      if (i == 0)
-      {
-        mImageViews[i].setImageResource(R.mipmap.ic_focus_select);
-      }
-      else
-      {
-        mImageViews[i].setImageResource(R.mipmap.ic_focus);
-      }
-      mLinearLayout.addView(mImageViews[i]);
+      mLinearLayout.addView(point);
     }
+
+    mImageViews[0].setSelected(true);
+    mCurrentPageN0 = 0;
   }
 
   private void onAddView()
@@ -119,6 +116,7 @@ public class GuideActivity extends Activity implements ViewPager.OnPageChangeLis
     view = new View(this);
     view.setBackgroundResource(R.mipmap.help4);
     mList.add(view);
+
     GuideAdapter adapter = new GuideAdapter(mList);
     mViewPager.setAdapter(adapter);
     mViewPager.setOnPageChangeListener(this);
@@ -156,17 +154,10 @@ public class GuideActivity extends Activity implements ViewPager.OnPageChangeLis
       mJump.setVisibility(View.VISIBLE);
     }
 
-    for (int i = 0; i < mImageViews.length; i++)
-    {
-      if (i != position)
-      {
-        mImageViews[i].setImageResource(R.mipmap.ic_focus);
-      }
-      else
-      {
-        mImageViews[i].setImageResource(R.mipmap.ic_focus_select);
-      }
-    }
+    // set selector point
+    mImageViews[mCurrentPageN0].setSelected(false);
+    mCurrentPageN0 = position;
+    mImageViews[position].setSelected(true);
   }
 
   @Override

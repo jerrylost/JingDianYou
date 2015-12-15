@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="#ffffff"
-    android:orientation="vertical"
-    android:id="@+id/ll_scenic_hotel"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#ffffff"
+              android:orientation="vertical"
+              android:id="@+id/ll_scenic_hotel"
     >
 
     <LinearLayout
@@ -18,7 +18,7 @@
             android:layout_width="5dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/d_5"
-            android:background="@mipmap/btn_orange_normel" />
+            android:background="@mipmap/btn_orange_normel"/>
 
         <TextView
             android:layout_width="0dp"
@@ -28,17 +28,17 @@
             android:text="酒店"
             android:textColor="#807c7c"
             android:textSize="22sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"/>
 
         <ImageView
             android:layout_width="15dp"
             android:layout_height="22dp"
-            android:background="@mipmap/arrow2" />
+            android:background="@mipmap/arrow2"/>
     </LinearLayout>
 
-   <include layout="@layout/list_hotel_item"
-       android:id="@+id/ll_list_hotel_item"/>
-
+    <include
+        layout="@layout/list_hotel_item"
+        android:id="@+id/ll_list_hotel_item"/>
 
 
 </LinearLayout>

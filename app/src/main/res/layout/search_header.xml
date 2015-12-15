@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
-    android:background="@color/green"
-    android:layout_width="match_parent"
-    android:layout_height="55dp">
+              android:orientation="horizontal"
+              android:background="@color/green"
+              android:layout_width="match_parent"
+              android:layout_height="55dp">
+
     <ImageView
         android:layout_marginLeft="@dimen/d_5"
         android:onClick="doBack"
@@ -12,6 +13,7 @@
         android:layout_height="wrap_content"
         android:src="@mipmap/back"
         />
+
     <LinearLayout
         android:layout_centerInParent="true"
         android:layout_gravity="center_vertical"
@@ -20,6 +22,7 @@
         android:layout_width="match_parent"
         android:background="@drawable/search_shape"
         android:layout_height="40dp">
+
         <EditText
             android:cursorVisible="false"
             android:singleLine="true"
@@ -31,7 +34,8 @@
             android:hint="请输入景点关键字"
             android:textColor="@color/white"
             android:paddingLeft="@dimen/d_10"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"/>
+
         <ImageView
             android:onClick="doSearch"
             android:id="@+id/iv_search"

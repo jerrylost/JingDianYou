@@ -1,24 +1,15 @@
 package com.jerry.jingdianyou.application;
 
 import android.app.Application;
-import android.content.Intent;
-import android.content.IntentFilter;
 import android.os.Environment;
 
-import com.baidu.location.BDLocation;
-import com.baidu.location.BDLocationListener;
-import com.baidu.location.LocationClient;
-import com.baidu.location.LocationClientOption;
-import com.baidu.mapapi.map.BaiduMap;
-import com.baidu.mapapi.map.MapView;
-import com.baidu.mapapi.search.poi.PoiSearch;
+import com.jerry.jingdianyou.R;
 import com.lidroid.xutils.HttpUtils;
 import com.nostra13.universalimageloader.cache.disc.impl.UnlimitedDiskCache;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
-import com.jerry.jingdianyou.R;
 
 import java.io.File;
 
@@ -27,7 +18,6 @@ import java.io.File;
  */
 public class JDYApplication extends Application
 {
-
   private static JDYApplication app;
   private ImageLoader mImageLoader;
   private HttpUtils mHttpUtils;
@@ -72,6 +62,7 @@ public class JDYApplication extends Application
   private void initImageLoader()
   {
     mImageLoader = ImageLoader.getInstance();
+
     // 用于缓存的内存大小
     int cacheSize = (int) Runtime.getRuntime().maxMemory() / 8;
 
@@ -81,15 +72,11 @@ public class JDYApplication extends Application
     // 判断存储卡的状态
     if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED))
     {
-
       cachePath = getApplicationContext().getExternalCacheDir().getPath();
-
     }
     else
     {
-
       cachePath = getApplicationContext().getCacheDir().getPath();
-
     }
 
     // 用存储缓存图片的文件夹

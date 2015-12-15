@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
 
 
     >
 
 
-
-
-    <com.pqc.jingdianyou.view.RoundImageView
+    <com.jerry.jingdianyou.view.RoundImageView
         android:id="@+id/guides_pic"
         android:layout_width="match_parent"
         android:layout_height="@dimen/d_150"
@@ -19,6 +17,7 @@
         android:layout_marginLeft="@dimen/d_5"
         android:layout_marginRight="@dimen/d_5"
         />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -27,6 +26,7 @@
         android:layout_marginLeft="@dimen/d_10"
         android:layout_marginTop="@dimen/d_10"
         />
+
     <TextView
         android:id="@+id/guides_name"
         android:layout_width="wrap_content"
@@ -38,6 +38,7 @@
         android:textColor="#FFF"
         android:textSize="20sp"
         />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -47,6 +48,7 @@
         android:layout_toRightOf="@id/guides_name"
         android:layout_marginTop="1dp"
         />
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -55,6 +57,7 @@
         android:layout_alignParentRight="true"
         android:layout_marginRight="@dimen/d_10"
         />
+
     <TextView
         android:id="@+id/collect_amount"
         android:layout_width="wrap_content"
@@ -66,6 +69,7 @@
         android:layout_alignBottom="@id/guides_pic"
         android:layout_marginRight="@dimen/d_20"
         />
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

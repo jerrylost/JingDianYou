@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:background="@color/green"
-    android:layout_width="match_parent"
-    android:layout_height="55dp">
+                android:orientation="vertical"
+                android:background="@color/green"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+
     <Button
         android:onClick="doBack"
         android:layout_marginLeft="@dimen/d_5"
@@ -16,6 +17,7 @@
         android:textSize="20sp"
         android:text="@string/string_rendezvous_you"
         />
+
     <ImageButton
         android:background="@null"
         android:onClick="selectSex"

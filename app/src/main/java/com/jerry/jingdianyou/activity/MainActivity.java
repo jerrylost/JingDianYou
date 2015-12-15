@@ -1,15 +1,13 @@
 package com.jerry.jingdianyou.activity;
 
-import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v4.app.FragmentManager;
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
-import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.util.DisplayMetrics;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -19,15 +17,15 @@ import com.baidu.location.BDLocation;
 import com.baidu.location.BDLocationListener;
 import com.baidu.location.LocationClient;
 import com.baidu.location.LocationClientOption;
-import com.lidroid.xutils.ViewUtils;
-import com.lidroid.xutils.view.annotation.ContentView;
-import com.lidroid.xutils.view.annotation.ViewInject;
 import com.jerry.jingdianyou.R;
 import com.jerry.jingdianyou.fragment.HomeFragment;
 import com.jerry.jingdianyou.fragment.PersonFragment;
 import com.jerry.jingdianyou.fragment.RendezvousFragment;
 import com.jerry.jingdianyou.fragment.ScenicFragment;
 import com.jerry.jingdianyou.fragment.StrategyFragment;
+import com.lidroid.xutils.ViewUtils;
+import com.lidroid.xutils.view.annotation.ContentView;
+import com.lidroid.xutils.view.annotation.ViewInject;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -35,10 +33,7 @@ import java.util.List;
 @ContentView(R.layout.activity_main)
 public class MainActivity extends FragmentActivity implements RadioGroup.OnCheckedChangeListener
 {
-
-  /**
-   * 主要的 5 个 fragment 的集合
-   */
+  // 主页Fragment集合
   private List<Fragment> mFgList = new LinkedList<Fragment>();
 
   @ViewInject(R.id.rg_main)
@@ -55,10 +50,8 @@ public class MainActivity extends FragmentActivity implements RadioGroup.OnCheck
   @ViewInject(R.id.rb_main_strategy)
   private RadioButton mStrategy;
 
-  /**
-   * 是否确定退出
-   */
-  private boolean isClose = true;
+  // 退出时间
+  private long mExitTime = 0;
 
   //定位功能的入口
   private LocationClient client;
@@ -68,7 +61,6 @@ public class MainActivity extends FragmentActivity implements RadioGroup.OnCheck
     @Override
     public void onReceiveLocation(BDLocation bdLocation)
     {
-
       //获取定位的状态码
       int locType = bdLocation.getLocType();
 
@@ -117,9 +109,9 @@ public class MainActivity extends FragmentActivity implements RadioGroup.OnCheck
     );
     mRadioGroup.setLayoutParams(params);
 
-    LinearLayout.LayoutParams rbParams = new LinearLayout.LayoutParams(
-        (widthPixels - 10) / 5, ViewGroup.LayoutParams.WRAP_CONTENT
-    );
+    LinearLayout.LayoutParams rbParams
+            = new LinearLayout.LayoutParams(
+                  (widthPixels - 10) / 5, ViewGroup.LayoutParams.WRAP_CONTENT);
 
     mHome.setLayoutParams(rbParams);
     mRende.setLayoutParams(rbParams);
@@ -138,9 +130,7 @@ public class MainActivity extends FragmentActivity implements RadioGroup.OnCheck
       for (Fragment fragment : mFgList)
       {
 
-        transaction.add(R.id.fg_container, fragment);
-
-        transaction.hide(fragment);
+        transaction.add(R.id.fg_container, fragment).hide(fragment);
       }
 
       // 显示 HomeFragment
@@ -197,10 +187,8 @@ public class MainActivity extends FragmentActivity implements RadioGroup.OnCheck
    */
   private void initView()
   {
-
     if (mFgList.size() == 0)
     {
-
       mFgList.add(new HomeFragment());
 
       mFgList.add(new StrategyFragment());
@@ -227,7 +215,6 @@ public class MainActivity extends FragmentActivity implements RadioGroup.OnCheck
 
     switch (checkedId)
     {
-
       case R.id.rb_main_home:
         index = 0;
         break;
@@ -245,7 +232,6 @@ public class MainActivity extends FragmentActivity implements RadioGroup.OnCheck
         break;
       default:
         break;
-
     }
 
     FragmentManager manager = getSupportFragmentManager();
@@ -268,31 +254,30 @@ public class MainActivity extends FragmentActivity implements RadioGroup.OnCheck
 
   }
 
+  /**
+   * 后退键处理
+   */
   @Override
   public void onBackPressed()
   {
-
-    if (isClose)
+    if (mExitTime == 0)
     {
-
-      Toast.makeText(this, "再按一次退出", Toast.LENGTH_SHORT).show();
-
-      isClose = false;
-
+      Toast.makeText(this, R.string.exit_text_tip, Toast.LENGTH_SHORT).show();
+      mExitTime = System.currentTimeMillis();
     }
     else
     {
-
-      this.finish();
-      System.exit(0);
-
+      if (mExitTime - System.currentTimeMillis() >= 3000)
+      {
+        this.finish();
+        System.exit(0);
+      }
     }
   }
 
   // 发送定位广播
   public void sendLocation(double latitude, double longitude)
   {
-
     SharedPreferences sp = getSharedPreferences("jingdianyou", MODE_PRIVATE);
     SharedPreferences.Editor edit = sp.edit();
     edit.putString("latitude", String.valueOf(latitude));

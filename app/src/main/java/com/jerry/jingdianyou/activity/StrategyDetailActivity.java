@@ -60,9 +60,6 @@ public class StrategyDetailActivity extends Activity implements View.OnTouchList
   @ViewInject(R.id.linearLaoyut)
   private LinearLayout mLinearLayout;
 
-  @ViewInject(R.id.c)
-  private ScrollView scrollView;
-
   //适配器端传递过来的参数id
   private String id;
   //添加参数
@@ -108,7 +105,6 @@ public class StrategyDetailActivity extends Activity implements View.OnTouchList
 
     //滚动条设置事件
     mScrollView.setOnTouchListener(this);
-
   }
 
   //加载数据
@@ -137,7 +133,6 @@ public class StrategyDetailActivity extends Activity implements View.OnTouchList
             mTextView.setText("第" + i + "天");
 
             mLinearLayout.addView(mTextView);
-
           }
         }
         if (size != 0)
@@ -150,8 +145,6 @@ public class StrategyDetailActivity extends Activity implements View.OnTouchList
 
             for (int a = 0; a < size1; a++)
             {
-
-
               //经度
               position_x = data.get(a).getPosition_x();
 

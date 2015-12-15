@@ -1,29 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:background="@color/white"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
     <LinearLayout
         android:gravity="center_vertical"
         android:layout_width="match_parent"
         android:layout_height="@dimen/d_100">
-        <com.pqc.jingdianyou.view.CircleImageView
+
+        <com.jerry.jingdianyou.view.CircleImageView
             android:id="@+id/iv_comment_photo"
             android:layout_marginLeft="@dimen/d_10"
             android:src="@mipmap/ic_launcher"
             android:layout_width="@dimen/d_70"
             android:scaleType="fitXY"
-            android:layout_height="@dimen/d_70" />
+            android:layout_height="@dimen/d_70"/>
+
         <RelativeLayout
             android:layout_marginLeft="@dimen/d_10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <TextView
                 android:id="@+id/tv_comment_name"
                 android:text="ewrewr"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"/>
+
             <TextView
                 android:id="@+id/tv_comment_date"
                 android:layout_marginRight="@dimen/d_5"
@@ -34,6 +39,7 @@
                 />
         </RelativeLayout>
     </LinearLayout>
+
     <TextView
         android:textColor="@color/black"
         android:textSize="@dimen/s_18"
@@ -41,21 +47,25 @@
         android:layout_marginLeft="@dimen/d_20"
         android:id="@+id/tv_comment_content"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"/>
+
     <RelativeLayout
         android:paddingLeft="@dimen/d_10"
         android:layout_width="match_parent"
         android:layout_height="@dimen/d_40">
+
         <LinearLayout
             android:layout_alignParentRight="true"
             android:layout_width="wrap_content"
             android:layout_height="match_parent">
+
             <ImageView
                 android:layout_gravity="center_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@mipmap/com_zan"
                 />
+
             <TextView
                 android:id="@+id/tv_comment_praise_amount"
                 android:layout_marginLeft="@dimen/d_5"
@@ -64,6 +74,7 @@
                 android:layout_height="wrap_content"
 
                 />
+
             <ImageView
                 android:layout_marginTop="@dimen/d_5"
                 android:layout_marginLeft="@dimen/d_10"
@@ -72,6 +83,7 @@
                 android:layout_height="wrap_content"
                 android:src="@mipmap/com_ping"
                 />
+
             <TextView
                 android:id="@+id/tv_comment_comment_amount"
                 android:layout_marginRight="@dimen/d_10"
@@ -82,12 +94,14 @@
                 />
         </LinearLayout>
     </RelativeLayout>
+
     <include layout="@layout/list_under_line"/>
-   <LinearLayout
-       android:visibility="gone"
-       android:id="@+id/ll_comment_reply"
-       android:orientation="vertical"
-       android:layout_width="match_parent"
-       android:layout_weight="1"
-       android:layout_height="0dp"></LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_comment_reply"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"></LinearLayout>
 </LinearLayout>

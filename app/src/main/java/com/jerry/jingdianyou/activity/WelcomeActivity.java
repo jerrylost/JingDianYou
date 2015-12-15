@@ -61,6 +61,7 @@ public class WelcomeActivity extends Activity
       intent.setClass(this, MainActivity.class);
     }
     startActivity(intent);
+
     finish();
   }
 }

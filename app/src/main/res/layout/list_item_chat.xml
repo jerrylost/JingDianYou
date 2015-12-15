@@ -1,25 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
     <LinearLayout
         android:gravity="center_vertical"
         android:layout_width="match_parent"
         android:layout_height="@dimen/d_100">
-        <com.pqc.jingdianyou.view.CircleImageView
+
+        <com.jerry.jingdianyou.view.CircleImageView
             android:id="@+id/iv_chat_photo"
             android:layout_marginLeft="@dimen/d_5"
             android:scaleType="centerCrop"
             android:layout_width="@dimen/d_80"
-            android:layout_height="@dimen/d_80" />
+            android:layout_height="@dimen/d_80"/>
+
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <TextView
 
                     android:id="@+id/tv_chat_member_name"
@@ -28,6 +33,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
                     />
+
                 <TextView
                     android:textColor="@color/gray"
                     android:id="@+id/tv_chat_distance"
@@ -39,6 +45,7 @@
                     android:padding="@dimen/d_5"
                     />
             </RelativeLayout>
+
             <TextView
                 android:id="@+id/tv_chat_sex"
                 android:layout_marginLeft="@dimen/d_10"
@@ -47,13 +54,14 @@
                 android:textColor="@color/white"
                 android:paddingLeft="@dimen/d_5"
                 android:layout_width="@dimen/d_55"
-                android:layout_height="@dimen/d_20" />
+                android:layout_height="@dimen/d_20"/>
+
             <TextView
                 android:layout_marginTop="@dimen/d_5"
                 android:textColor="@color/gray"
                 android:id="@+id/tv_signature"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"/>
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

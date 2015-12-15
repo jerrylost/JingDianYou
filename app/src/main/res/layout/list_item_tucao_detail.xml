@@ -1,31 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:background="@color/white"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <LinearLayout
             android:gravity="center_vertical"
             android:layout_width="match_parent"
             android:layout_height="@dimen/d_100">
-            <com.pqc.jingdianyou.view.CircleImageView
+
+            <com.jerry.jingdianyou.view.CircleImageView
                 android:id="@+id/iv_tu_cao_photo"
                 android:layout_marginLeft="@dimen/d_5"
                 android:scaleType="centerCrop"
                 android:layout_width="@dimen/d_70"
-                android:layout_height="@dimen/d_70" />
+                android:layout_height="@dimen/d_70"/>
+
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
                 <RelativeLayout
                     android:layout_marginTop="@dimen/d_5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <TextView
                         android:layout_marginLeft="@dimen/d_10"
                         android:layout_centerVertical="true"
@@ -35,6 +41,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="18sp"
                         />
+
                     <TextView
                         android:id="@+id/tv_tu_cao_message_date"
                         android:layout_marginRight="@dimen/d_5"
@@ -44,6 +51,7 @@
                         android:layout_height="wrap_content"
                         />
                 </RelativeLayout>
+
                 <TextView
                     android:text="123"
                     android:id="@+id/tv_tu_cao_sex"
@@ -53,16 +61,18 @@
                     android:textColor="@color/white"
                     android:paddingLeft="@dimen/d_5"
                     android:layout_width="55dp"
-                    android:layout_height="20dp" />
+                    android:layout_height="20dp"/>
             </LinearLayout>
 
         </LinearLayout>
+
         <TextView
             android:id="@+id/tv_tu_cao_message_title"
             android:layout_marginLeft="@dimen/d_5"
             android:textColor="@color/black"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"/>
+
         <TextView
             android:layout_marginBottom="@dimen/d_5"
             android:layout_marginLeft="@dimen/d_5"
@@ -70,7 +80,8 @@
             android:layout_marginRight="@dimen/d_5"
             android:id="@+id/tv_tu_cao_message_content"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"/>
+
         <LinearLayout
             android:layout_marginLeft="@dimen/d_5"
             android:id="@+id/ll_tu_cao_photos"
@@ -79,17 +90,21 @@
             android:layout_height="wrap_content">
         </LinearLayout>
     </LinearLayout>
+
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/d_10"
         android:background="@color/qianhui"/>
+
     <TextView
         android:gravity="center_vertical"
         android:paddingLeft="@dimen/d_20"
         android:id="@+id/tv_rendezvous_comment_count"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/d_40" />
+        android:layout_height="@dimen/d_40"/>
+
     <include layout="@layout/list_under_line"/>
+
     <LinearLayout
         android:visibility="visible"
         android:layout_marginTop="@dimen/d_20"
@@ -98,15 +113,17 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <ImageView
             android:src="@mipmap/monkey"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"/>
+
         <TextView
             android:layout_marginTop="@dimen/d_10"
             android:textColor="@color/gray"
             android:text="@string/string_comment"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"/>
     </LinearLayout>
 </LinearLayout>

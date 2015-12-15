@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:background="@color/white"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
     <RelativeLayout
         android:background="@color/green"
         android:layout_width="match_parent"
         android:layout_height="@dimen/d_50">
+
         <Button
             android:onClick="SignUpBack"
             android:paddingLeft="@dimen/d_10"
@@ -21,6 +23,7 @@
             android:text="已报名用户"
             />
     </RelativeLayout>
+
     <ListView
         android:id="@+id/lv_sign_up"
         android:layout_width="match_parent"

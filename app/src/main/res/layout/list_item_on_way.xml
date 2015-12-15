@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:background="@color/white"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+              android:orientation="vertical"
+              android:background="@color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
     <include layout="@layout/list_under_line"/>
+
     <LinearLayout
         android:gravity="center_vertical"
         android:layout_width="match_parent"
         android:layout_height="@dimen/d_100">
-        <com.pqc.jingdianyou.view.CircleImageView
+
+        <com.jerry.jingdianyou.view.CircleImageView
             android:id="@+id/iv_on_way_photo"
             android:layout_marginLeft="@dimen/d_5"
             android:scaleType="centerCrop"
             android:layout_width="@dimen/d_80"
-            android:layout_height="@dimen/d_80" />
+            android:layout_height="@dimen/d_80"/>
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <TextView
                 android:id="@+id/tv_on_way_name"
                 android:padding="@dimen/d_10"
@@ -26,6 +31,7 @@
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 />
+
             <TextView
                 android:layout_below="@id/tv_on_way_name"
                 android:id="@+id/tv_on_way_sex"
@@ -35,7 +41,8 @@
                 android:textColor="@color/white"
                 android:paddingLeft="@dimen/d_5"
                 android:layout_width="55dp"
-                android:layout_height="20dp" />
+                android:layout_height="20dp"/>
+
             <TextView
                 android:id="@+id/tv_yueta"
                 android:layout_marginRight="@dimen/d_10"
@@ -51,11 +58,13 @@
                 />
         </RelativeLayout>
     </LinearLayout>
+
     <TextView
         android:id="@+id/tv_on_way_message_content"
         android:padding="@dimen/d_10"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"/>
+
     <LinearLayout
         android:paddingLeft="@dimen/d_10"
         android:id="@+id/ll_photos"
@@ -63,11 +72,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
     </LinearLayout>
+
     <LinearLayout
         android:orientation="vertical"
         android:padding="@dimen/d_5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <TextView
             android:id="@+id/tv_address"
             android:gravity="bottom"
@@ -76,18 +87,21 @@
             android:drawableLeft="@mipmap/way_location"
             android:textColor="@color/green"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"/>
+
         <RelativeLayout
             android:padding="@dimen/d_5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <TextView
                 android:id="@+id/tv_data"
                 android:layout_centerVertical="true"
                 android:drawablePadding="@dimen/d_5"
                 android:drawableLeft="@mipmap/way_clock"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"/>
+
             <TextView
                 android:gravity="center"
                 android:layout_centerVertical="true"
@@ -98,6 +112,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 />
+
             <TextView
                 android:gravity="center"
                 android:layout_centerVertical="true"

@@ -1,34 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
 
-<android.support.v4.view.ViewPager
-    android:id="@+id/guide_page"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"/>
-    <TextView
-        android:id="@+id/guide_text_jump"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/string_jump"
-        android:textSize="@dimen/s_25"
-        android:layout_gravity="right"
-        android:layout_marginTop="@dimen/d_10"
-        android:layout_marginRight="@dimen/d_10"
-        />
+        <android.support.v4.view.ViewPager
+            android:id="@+id/guide_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/guide_text_jump"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/d_10"
+            android:layout_marginTop="@dimen/d_10"
+            android:text="@string/string_jump"
+            android:textSize="@dimen/s_25"/>
+
+        <!--<com.jerry.jingdianyou.view.CircleIndicator-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:id="@+id/indicator"-->
+        <!--app:ci_background="@android:color/white"-->
+        <!--app:ci_selected_background="0xffe6454a"-->
+        <!--app:ci_mode="outside"-->
+        <!--app:ci_gravity="center"-->
+        <!--app:ci_radius="10dp"-->
+        <!--app:ci_margin="5dp"/>-->
+
         <LinearLayout
             android:id="@+id/guide_layout"
             android:layout_width="match_parent"
             android:layout_height="@dimen/d_50"
-            android:orientation="horizontal"
-            android:gravity="center"
             android:layout_gravity="bottom"
-            >
+            android:gravity="center"
+            android:orientation="horizontal">
 
         </LinearLayout>
     </FrameLayout>

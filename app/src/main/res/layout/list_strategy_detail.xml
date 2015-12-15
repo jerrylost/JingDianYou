@@ -1,45 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
     <LinearLayout
         android:id="@+id/detail_linearlayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:visibility="gone"
-    >
+        >
 
-    <ImageView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:src="@mipmap/strategy_dian"
-    />
-    <TextView
-        android:id="@+id/day"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/strategy_dian"
+            />
 
-        android:textSize="@dimen/d_25"
-    />
-    <TextView
-    android:id="@+id/city_code"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:textSize="@dimen/d_25"
-    />
+        <TextView
+            android:id="@+id/day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/d_25"
+            />
+
+        <TextView
+            android:id="@+id/city_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/d_25"
+            />
     </LinearLayout>
+
     <ImageView
         android:id="@+id/image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@mipmap/strategy_hotel"
         />
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="@dimen/d_10">
+
         <ImageView
             android:id="@+id/item_picture"
             android:layout_width="match_parent"
@@ -47,6 +53,7 @@
             android:background="@mipmap/empty_photo"
 
             />
+
         <TextView
             android:id="@+id/item_outlined"
             android:layout_width="wrap_content"
@@ -58,6 +65,7 @@
             android:layout_marginLeft="@dimen/d_10"
             />
     </RelativeLayout>
+
     <TextView
         android:id="@+id/item_description"
         android:layout_width="match_parent"
@@ -66,13 +74,15 @@
         android:text="西安，为世界四大文明古都之一。西北望长安，可怜无数山。十三朝建都于此，唐朝长安更是将中华文化在此地发挥到的淋淋尽致，可想其历史底蕴，文化内涵。"
         android:padding="@dimen/d_10"
         />
-   <WebView
-       android:id="@+id/data"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:visibility="gone"
-       >
-   </WebView>
+
+    <WebView
+        android:id="@+id/data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        >
+    </WebView>
+
     <TextView
         android:id="@+id/look_more"
         android:layout_width="wrap_content"
@@ -85,6 +95,7 @@
         android:clickable="true"
         android:focusable="false"
         />
+
     <TextView
         android:id="@+id/pack_up"
         android:layout_width="wrap_content"

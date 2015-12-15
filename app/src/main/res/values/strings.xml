@@ -55,9 +55,6 @@
     <string name="string_welcome">欢迎页面</string>
 
 
-
-
-
     <integer name="app_version_code">2</integer>
 
     <string name="app_version">2.0.0</string>
@@ -120,4 +117,5 @@
     <string name="string_lvke">常用旅客</string>
     <string name="string_jump">跳过</string>
     <string name="string_coolect">我的收藏</string>
+    <string name="exit_text_tip">再按一次退出</string>
 </resources>

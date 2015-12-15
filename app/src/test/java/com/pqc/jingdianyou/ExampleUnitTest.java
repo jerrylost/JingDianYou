@@ -1,4 +1,4 @@
-package com.pqc.jingdianyou;
+package com.jerry.jingdianyou;
 
 import org.junit.Test;
 

@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
     <include layout="@layout/list_under_line"/>
+
     <LinearLayout
         android:layout_marginTop="@dimen/d_5"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="@dimen/d_50">
+
         <RadioButton
             android:id="@+id/rb_rendezvous_sixin"
             android:textColor="@color/gray"
@@ -18,7 +21,8 @@
             android:gravity="center"
             android:button="@null"
             android:drawableTop="@mipmap/com_tab_sixin"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"/>
+
         <RadioButton
             android:id="@+id/rb_rendezvous_comment"
             android:textColor="@color/gray"
@@ -28,7 +32,8 @@
             android:gravity="center"
             android:button="@null"
             android:drawableTop="@mipmap/com_tab_ping"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"/>
+
         <RadioButton
             android:id="@+id/rb_rendezvous_zan"
             android:layout_width="0dp"
@@ -38,6 +43,6 @@
             android:gravity="center"
             android:button="@null"
             android:drawableTop="@mipmap/com_tab_zan"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"/>
     </LinearLayout>
 </LinearLayout>

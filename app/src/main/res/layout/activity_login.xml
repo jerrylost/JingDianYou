@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:background="@color/qian"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    
+              android:orientation="vertical"
+              android:background="@color/qian"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
     <include layout="@layout/login_header"/>
+
     <LinearLayout
         android:background="@color/white"
         android:layout_marginTop="@dimen/d_20"
@@ -13,10 +14,12 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         >
+
         <RelativeLayout
             android:paddingLeft="@dimen/d_10"
             android:layout_width="match_parent"
             android:layout_height="50dp">
+
             <ImageView
                 android:id="@+id/iv_hpone_img"
                 android:layout_centerVertical="true"
@@ -25,23 +28,27 @@
                 android:layout_height="match_parent"
                 android:src="@mipmap/login_phone"
                 />
+
             <EditText
                 android:id="@+id/et_phone_number"
                 android:background="@color/white"
                 android:hint="请输入号码"
                 android:layout_toRightOf="@id/iv_hpone_img"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"/>
         </RelativeLayout>
+
         <View
             android:layout_marginLeft="@dimen/d_50"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
             android:background="@color/qian"/>
+
         <RelativeLayout
             android:paddingLeft="@dimen/d_10"
             android:layout_width="match_parent"
             android:layout_height="50dp">
+
             <ImageView
                 android:id="@+id/iv_hpone_lock"
                 android:layout_centerVertical="true"
@@ -50,15 +57,17 @@
                 android:layout_height="match_parent"
                 android:src="@mipmap/login_lock"
                 />
+
             <EditText
                 android:id="@+id/et_password"
                 android:background="@color/white"
                 android:hint="请输入密码"
                 android:layout_toRightOf="@id/iv_hpone_lock"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"/>
         </RelativeLayout>
     </LinearLayout>
+
     <Button
         android:background="@drawable/login_button_shape"
         android:layout_marginLeft="@dimen/d_20"
@@ -70,10 +79,12 @@
         android:textSize="20sp"
         android:textColor="@color/white"
         />
+
     <RelativeLayout
         android:layout_marginTop="@dimen/d_30"
         android:layout_width="match_parent"
         android:layout_height="@dimen/d_40">
+
         <TextView
             android:id="@+id/tv_forget_pwd"
             android:layout_centerVertical="true"
@@ -85,6 +96,7 @@
             android:textSize="18sp"
             android:text="忘记密码 ？"
             />
+
         <TextView
             android:id="@+id/tv_remember_pwd"
             android:layout_centerVertical="true"
@@ -93,7 +105,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="18sp"
-            android:text="记住密码" />
+            android:text="记住密码"/>
+
         <CheckBox
             android:id="@+id/cb_remember_pwd"
             android:checked="true"
@@ -101,8 +114,9 @@
             android:layout_marginLeft="@dimen/d_5"
             android:layout_toLeftOf="@id/tv_remember_pwd"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"/>
     </RelativeLayout>
+
     <RelativeLayout
         android:layout_marginTop="@dimen/d_10"
         android:layout_width="match_parent"
@@ -116,6 +130,7 @@
             android:textSize="18sp"
             android:text="使用第三方登录"
             />
+
         <View
             android:layout_marginRight="@dimen/d_10"
             android:layout_toLeftOf="@id/tv_smg"
@@ -124,6 +139,7 @@
             android:layout_height="0.5dp"
             android:background="@color/gray"
             />
+
         <View
             android:layout_marginLeft="@dimen/d_10"
             android:layout_toRightOf="@id/tv_smg"
@@ -133,16 +149,19 @@
             android:background="@color/gray"
             />
     </RelativeLayout>
+
     <LinearLayout
         android:layout_marginTop="@dimen/d_20"
         android:layout_width="match_parent"
         android:layout_height="@dimen/d_40">
+
         <ImageView
             android:id="@+id/iv_login_qq"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:src="@mipmap/login_qqq"/>
+
         <ImageView
             android:id="@+id/iv_login_weibo"
             android:layout_width="0dp"
@@ -151,6 +170,7 @@
             android:src="@mipmap/login_weibo"
 
             />
+
         <ImageView
             android:id="@+id/iv_login_weixin"
             android:layout_width="0dp"
