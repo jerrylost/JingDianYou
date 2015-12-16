@@ -79,18 +79,25 @@ public class StrategyDetailActivity extends BaseActivity implements View.OnTouch
   private int alph = 0;
   private float a;
 
+  private JingDbHelper jingDbHelper;
+
   @Override
   protected void onCreate(Bundle savedInstanceState)
   {
     super.onCreate(savedInstanceState);
     ViewUtils.inject(this);
+
+    jingDbHelper = new JingDbHelper(this);
+
     mImageLoader = JDYApplication.getApp().getmImageLoader();
     mOptions = JDYApplication.getApp().getmOptions();
     mRelativeLayout.setAlpha(0);
 
     //获取适配器端传递过来的参数id
     Intent intent = getIntent();
+
     id = intent.getStringExtra("guides_id");
+
     String pic = intent.getStringExtra("pic");
     String title = intent.getStringExtra("title");
     mStrategyImage.setScaleType(ImageView.ScaleType.FIT_XY);
@@ -180,8 +187,10 @@ public class StrategyDetailActivity extends BaseActivity implements View.OnTouch
   public void onCollect(View view)
   {
     //判断是否已经收藏
-    boolean simpleData = new JingDbHelper(this).isSimpleData(JingDbTable.JingControll.COLUMN_ID + "=?",
-        new String[]{strategyDetail.getMydata().getIs_collect()});
+    boolean simpleData = jingDbHelper.isSimpleData(
+            JingDbTable.JingControll.COLUMN_ID + "=?",
+            new String[]{id});
+
     if (simpleData)
     {
       Toast.makeText(StrategyDetailActivity.this, "数据已经存在，不用再收藏了", Toast.LENGTH_SHORT).show();
@@ -192,6 +201,7 @@ public class StrategyDetailActivity extends BaseActivity implements View.OnTouch
       //如果不存在，则插入
       ContentValues values = new ContentValues();
       //插入标题
+      values.put(JingDbTable.JingControll.COLUMN_ID,id);
       values.put(JingDbTable.JingControll.COLUMN_TITLE, data.get(i).getGuides_title());
       boolean saveData = new JingDbHelper(this).SaveData(values);
       if (saveData)

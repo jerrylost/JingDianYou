@@ -14,6 +14,7 @@ import com.lidroid.xutils.view.annotation.ContentView;
 @ContentView(R.layout.activity_about_we)
 public class AboutWeActivity extends BaseActivity
 {
+
   @Override
   protected void onCreate(Bundle savedInstanceState)
   {

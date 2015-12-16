@@ -34,16 +34,17 @@ public class CollectActivity extends FragmentActivity
 
   private List<Fragment> mListFragment = new ArrayList<>();
 
-  // 显示标题
-  private String titles[] = {getString(R.string.title_scenic),
-                             getString(R.string.title_strategy),
-                             getString(R.string.title_arrange_travel)};
-
+  private String titles[] ;
   @Override
   protected void onCreate(Bundle savedInstanceState)
   {
     super.onCreate(savedInstanceState);
     ViewUtils.inject(this);
+
+    titles = new String[] {getString(R.string.title_scenic),
+            getString(R.string.title_strategy),
+            getString(R.string.title_arrange_travel)};
+
     mListFragment.add(new GonglueFragment());
     mListFragment.add(new jingdianFragment());
     mListFragment.add(new yueyouFragment());

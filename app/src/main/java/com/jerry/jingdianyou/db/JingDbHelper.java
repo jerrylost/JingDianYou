@@ -8,6 +8,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
+import android.util.Log;
 
 /**
  * Created by  Jerry.Zou
@@ -41,6 +42,7 @@ public class JingDbHelper extends SQLiteOpenHelper
     SQLiteDatabase db = getWritableDatabase();
     //把数据添加进入数据库
     long insert = db.insert(JingDbTable.JingControll.NAME, null, values);
+    Log.e("数据库插入数据",insert+"");
     //关闭数据库
     db.close();
     //判断是否添加成功
@@ -55,7 +57,7 @@ public class JingDbHelper extends SQLiteOpenHelper
     SQLiteDatabase db = getWritableDatabase();
     //遍历查询
     Cursor cursor = db.query(JingDbTable.JingControll.NAME, null, where, args, null, null, null);
-    cursor.moveToNext();
+    cursor.moveToFirst();
     //证明有相同的数据返回true
     if (cursor.getCount() > 0)
     {

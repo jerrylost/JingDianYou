@@ -9,6 +9,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.text.Editable;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -477,6 +478,8 @@ public class HomeFragment extends Fragment
         {
           int tag = (int) v.getTag();
           Intent intent = new Intent();
+
+
           intent.putExtra("guides_id", guides_data.get(tag).getGuides_id());
           intent.putExtra("pic", guides_data.get(tag).getGuides_pic());
           intent.putExtra("title", guides_data.get(tag).getGuides_name());
