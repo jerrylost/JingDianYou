@@ -48,6 +48,7 @@ public class JingDbHelper extends SQLiteOpenHelper {
         //判断是否添加成功
         return insert > 0;
 
+
     }
 
     //查询数据库中的所有指定类型的数据记录
