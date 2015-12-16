@@ -202,6 +202,8 @@ public class StrategyDetailActivity extends BaseActivity implements View.OnTouch
     }
 
 
+
+
   }
 
   public void doBack(View view)
