@@ -479,7 +479,6 @@ public class HomeFragment extends Fragment
           int tag = (int) v.getTag();
           Intent intent = new Intent();
 
-
           intent.putExtra("guides_id", guides_data.get(tag).getGuides_id());
           intent.putExtra("pic", guides_data.get(tag).getGuides_pic());
           intent.putExtra("title", guides_data.get(tag).getGuides_name());

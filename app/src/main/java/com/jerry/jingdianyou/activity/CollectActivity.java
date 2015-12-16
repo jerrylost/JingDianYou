@@ -41,8 +41,9 @@ public class CollectActivity extends FragmentActivity
     super.onCreate(savedInstanceState);
     ViewUtils.inject(this);
 
-    titles = new String[] {getString(R.string.title_scenic),
+    titles = new String[] {
             getString(R.string.title_strategy),
+            getString(R.string.title_scenic),
             getString(R.string.title_arrange_travel)};
 
     mListFragment.add(new GonglueFragment());

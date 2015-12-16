@@ -36,7 +36,6 @@ import java.util.List;
  */
 public class ScenicFragment extends Fragment implements View.OnClickListener
 {
-
   private List<Fragment> mFragments = new ArrayList<>();
 
   @ViewInject(R.id.st_scenic_sliding)
