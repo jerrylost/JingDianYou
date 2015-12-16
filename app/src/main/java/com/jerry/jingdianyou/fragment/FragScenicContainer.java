@@ -35,7 +35,6 @@ import java.util.Map;
  */
 public class FragScenicContainer extends Fragment
 {
-
   @ViewInject(R.id.pull_to_refresh_scenic_cotent)
   private PullToRefreshListView mScenicList;
 
@@ -70,6 +69,8 @@ public class FragScenicContainer extends Fragment
     return fragment;
   }
 
+  private boolean isReceiveMsg = false;
+
   private BroadcastReceiver receiver = new BroadcastReceiver()
   {
     @Override
@@ -81,6 +82,7 @@ public class FragScenicContainer extends Fragment
         cityName = intent.getStringExtra("cityName");
         mPosition_y = "";
         mPosition_x = "";
+        isReceiveMsg = true;
         loadJingDianData();
       }
     }
@@ -93,6 +95,13 @@ public class FragScenicContainer extends Fragment
     IntentFilter filter = new IntentFilter();
     filter.addAction("city");
     getActivity().registerReceiver(receiver, filter);
+  }
+
+  @Override
+  public void onDestroy()
+  {
+    super.onDestroy();
+    getActivity().unregisterReceiver(receiver);
   }
 
   @Nullable
@@ -126,15 +135,26 @@ public class FragScenicContainer extends Fragment
         "\"city\":\"" + cityName + "\"," +
         "\"pageIndex\":\"" + mPageIndex + "\"," +
         "\"scenic_type\":\"" + mScenic_Type + "\"}");
+
     mHttpConnect.getScenicList(params, new DataCallBack()
     {
       @Override
       public void onSuccess(String response)
       {
         hidLoading();
+
+        // 判断是否为接收消息
+        if (isReceiveMsg)
+        {
+          mScenics.clear();
+          isReceiveMsg = false;
+        }
+
         //返回景区列表信息
         Gson gson = new Gson();
+
         ScenicFragItem scenic = gson.fromJson(response, ScenicFragItem.class);
+
         if (SCCESS.equals(scenic.getResultStatus()))
         {
           mScenics.addAll(scenic.getData());
