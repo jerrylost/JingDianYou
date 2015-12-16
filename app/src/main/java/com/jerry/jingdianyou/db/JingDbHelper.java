@@ -56,6 +56,8 @@ public class JingDbHelper extends SQLiteOpenHelper {
 
         Cursor cursor = null;
 
+
+
         cursor = db.query(JingDbTable.JingControll.NAME,
                 null,
                 JingDbTable.JingControll.COLUMN_TYPE + "=?",
