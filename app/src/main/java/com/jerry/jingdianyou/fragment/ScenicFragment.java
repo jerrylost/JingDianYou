@@ -27,16 +27,13 @@ import com.jerry.jingdianyou.tabIndicator.SlidingTabLayout;
 
 import java.util.ArrayList;
 import java.util.List;
-/**
- * Created by Jerry.Zou
- */
 
 /**
+ * Created by Jerry.Zou
  * 景点
  */
 public class ScenicFragment extends Fragment implements View.OnClickListener
 {
-
   private List<Fragment> mFragments = new ArrayList<>();
 
   @ViewInject(R.id.st_scenic_sliding)
@@ -64,6 +61,7 @@ public class ScenicFragment extends Fragment implements View.OnClickListener
       }
     }
   };
+
   private String cityCode;
   private String cityName;
 
@@ -76,11 +74,17 @@ public class ScenicFragment extends Fragment implements View.OnClickListener
     getActivity().registerReceiver(receiver, filter);
   }
 
+  @Override
+  public void onDestroy()
+  {
+    super.onDestroy();
+    getActivity().unregisterReceiver(receiver);
+  }
+
   @Nullable
   @Override
   public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
   {
-
     View view = inflater.inflate(R.layout.fg_scenic, container, false);
 
     ViewUtils.inject(this, view);
@@ -95,12 +99,16 @@ public class ScenicFragment extends Fragment implements View.OnClickListener
     mSlidingTabLayout.setDistributeEvenly(true);
 
     mSlidingTabLayout.setCustomTabView(R.layout.sliding_layout, R.id.text);
-    MyAdapter adapter = new MyAdapter(getFragmentManager());
 
+    MyAdapter adapter = new MyAdapter(getFragmentManager());
     mViewPager.setAdapter(adapter);
+
     mSlidingTabLayout.setViewPager(mViewPager);
+
     mViewPager.setCurrentItem(1);
+
     mCitySelect.setOnClickListener(this);
+
     return view;
   }
 

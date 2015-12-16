@@ -113,7 +113,6 @@ public class CityAdapter extends BaseAdapter
 
   public int getWordPosition(String word)
   {
-
     for (int i = 0; i < mCitys.size(); i++)
     {
       if (mCitys.get(i).getLetter().equals(word))

@@ -43,12 +43,15 @@ public class StrategyDetailActivity extends BaseActivity implements View.OnTouch
   //图片
   @ViewInject(R.id.item_picture)
   private ImageView mStrategyImage;
+
   //标题
   @ViewInject(R.id.guides_title)
   private TextView mStrategyTitle;
+
   //适配器
   @ViewInject(R.id.lisview)
   private ListView mLisview;
+
   //滚动条
   @ViewInject(R.id.scrollView)
   private ScrollView mScrollView;
@@ -56,12 +59,14 @@ public class StrategyDetailActivity extends BaseActivity implements View.OnTouch
   //头布局
   @ViewInject(R.id.strategy_detail_head_relative)
   private RelativeLayout mRelativeLayout;
+
   //天数的布局
   @ViewInject(R.id.linearLaoyut)
   private LinearLayout mLinearLayout;
 
   //适配器端传递过来的参数id
   private String id;
+
   //添加参数
   private Map<String, Object> params = new HashMap<String, Object>();
 
@@ -84,15 +89,19 @@ public class StrategyDetailActivity extends BaseActivity implements View.OnTouch
   {
     super.onCreate(savedInstanceState);
     ViewUtils.inject(this);
+
     mImageLoader = JDYApplication.getApp().getmImageLoader();
     mOptions = JDYApplication.getApp().getmOptions();
     mRelativeLayout.setAlpha(0);
 
     //获取适配器端传递过来的参数id
     Intent intent = getIntent();
+
     id = intent.getStringExtra("guides_id");
+
     String pic = intent.getStringExtra("pic");
     String title = intent.getStringExtra("title");
+
     mStrategyImage.setScaleType(ImageView.ScaleType.FIT_XY);
     mImageLoader.displayImage(pic, mStrategyImage, mOptions);
     mStrategyTitle.setText(title);
@@ -100,6 +109,7 @@ public class StrategyDetailActivity extends BaseActivity implements View.OnTouch
     //适配适配器
     mStrAdapter = new StrategyDetailListAdapter(this, mList, id);
     mLisview.setAdapter(mStrAdapter);
+
     //加载数据
     initDetailLoading();
 
@@ -185,7 +195,6 @@ public class StrategyDetailActivity extends BaseActivity implements View.OnTouch
     if (simpleData)
     {
       Toast.makeText(StrategyDetailActivity.this, "数据已经存在，不用再收藏了", Toast.LENGTH_SHORT).show();
-
     }
     else
     {

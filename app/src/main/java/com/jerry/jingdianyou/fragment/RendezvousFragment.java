@@ -40,9 +40,6 @@ import java.util.Map;
 
 /**
  * Created by Jerry.Zou
- */
-
-/**
  * 约游
  */
 public class RendezvousFragment extends Fragment
@@ -70,8 +67,8 @@ public class RendezvousFragment extends Fragment
   Map<String, Object> params = new HashMap<>();
   private AdvertList advert;
 
-  private int ONE = 1;
-  private int TWO = 3000;
+  private int WHAT_1 = 1;
+  private int time = 3000;
   private int width = 0;
   private int height = 0;
 
@@ -80,7 +77,6 @@ public class RendezvousFragment extends Fragment
   public View onCreateView(LayoutInflater inflater, ViewGroup container,
                            Bundle savedInstanceState)
   {
-
     View view = inflater.inflate(R.layout.fg_rendezvous, container, false);
 
     ViewUtils.inject(this, view);
@@ -94,9 +90,11 @@ public class RendezvousFragment extends Fragment
     return view;
   }
 
+  /**
+   * 加载顶部广告栏
+   */
   private void loadAdvert()
   {
-
     params.put("RequestJson",
         "{\"adv_position\":\"3\",\"sizeTypeHeight\":200,\"sizeTypeWidth\":720}");
 
@@ -111,7 +109,6 @@ public class RendezvousFragment extends Fragment
 
         if (data != null)
         {
-
           mBanners.addAll(data);
 
           addPoint();
@@ -134,8 +131,7 @@ public class RendezvousFragment extends Fragment
    */
   private void timerChangeBanner()
   {
-
-    mHandler.sendEmptyMessageDelayed(ONE, TWO);
+    mHandler.sendEmptyMessageDelayed(WHAT_1, time);
   }
 
   private Handler mHandler = new Handler()
@@ -151,7 +147,7 @@ public class RendezvousFragment extends Fragment
       // mVpBanner 选择对应
       // 圆点切换
       mVpBanner.setCurrentItem(mCurrentPageNo);
-      mHandler.sendEmptyMessageDelayed(ONE, TWO);
+      mHandler.sendEmptyMessageDelayed(WHAT_1, time);
     }
   };
 
@@ -166,10 +162,8 @@ public class RendezvousFragment extends Fragment
     }
 
     LinearLayout.LayoutParams layoutParams =
-        new LinearLayout.LayoutParams(
-            ViewGroup.LayoutParams.WRAP_CONTENT,
-            ViewGroup.LayoutParams.WRAP_CONTENT
-        );
+              new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,
+                                            ViewGroup.LayoutParams.WRAP_CONTENT);
     layoutParams.rightMargin = 15;
 
     for (int i = 0; i < mBanners.size(); i++)
@@ -201,6 +195,7 @@ public class RendezvousFragment extends Fragment
 
     width = metrics.widthPixels;
     height = metrics.heightPixels;
+
     //设置 ViewPager高度
     ViewGroup.LayoutParams layoutParams = mRelativeLayout.getLayoutParams();
     layoutParams.height = metrics.heightPixels / 3;
@@ -270,7 +265,6 @@ public class RendezvousFragment extends Fragment
       default:
         break;
     }
-
   }
 
   @Override
@@ -279,5 +273,6 @@ public class RendezvousFragment extends Fragment
     super.onDestroy();
     mBanners.clear();
     mIvList.clear();
+    mHandler.removeCallbacksAndMessages(null);
   }
 }

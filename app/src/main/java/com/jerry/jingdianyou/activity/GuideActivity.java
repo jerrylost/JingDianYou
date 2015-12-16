@@ -86,6 +86,9 @@ public class GuideActivity extends BaseActivity implements ViewPager.OnPageChang
     {
       point = new ImageView(this);
 
+      // set background selector
+      point.setBackgroundResource(R.drawable.selector_nav_point);
+
       LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(20, 20);
       params.rightMargin = 10;
       point.setLayoutParams(params);

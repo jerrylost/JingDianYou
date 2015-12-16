@@ -170,8 +170,7 @@ public class AppManager
                 activityMgr.killBackgroundProcesses(context.getPackageName());
 
                 // 注意，如果您有后台程序运行，请不要支持此句子
-                //finishAllActivity();
-                //System.exit(0);
+                System.exit(0);
             }
 
         } catch (Exception e)

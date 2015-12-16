@@ -18,6 +18,7 @@ import com.baidu.location.BDLocationListener;
 import com.baidu.location.LocationClient;
 import com.baidu.location.LocationClientOption;
 import com.jerry.jingdianyou.R;
+import com.jerry.jingdianyou.application.AppManager;
 import com.jerry.jingdianyou.fragment.HomeFragment;
 import com.jerry.jingdianyou.fragment.PersonFragment;
 import com.jerry.jingdianyou.fragment.RendezvousFragment;
@@ -265,10 +266,10 @@ public class MainActivity extends FragmentActivity implements RadioGroup.OnCheck
     }
     else
     {
-      if (mExitTime - System.currentTimeMillis() >= 3000)
+      if (mExitTime - System.currentTimeMillis() <= 3000)
       {
         this.finish();
-        System.exit(0);
+        AppManager.getAppManager().AppExit(this,false);
       }
     }
   }

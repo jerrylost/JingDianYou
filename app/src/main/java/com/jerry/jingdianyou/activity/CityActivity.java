@@ -1,20 +1,19 @@
 package com.jerry.jingdianyou.activity;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.lidroid.xutils.ViewUtils;
-import com.lidroid.xutils.view.annotation.ContentView;
-import com.lidroid.xutils.view.annotation.ViewInject;
 import com.jerry.jingdianyou.R;
 import com.jerry.jingdianyou.adapter.CityAdapter;
 import com.jerry.jingdianyou.entity.CitySort;
 import com.jerry.jingdianyou.utils.DataCallBack;
 import com.jerry.jingdianyou.utils.JDYHttpConnect;
 import com.jerry.jingdianyou.view.SlideBar;
+import com.lidroid.xutils.ViewUtils;
+import com.lidroid.xutils.view.annotation.ContentView;
+import com.lidroid.xutils.view.annotation.ViewInject;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -36,8 +35,10 @@ public class CityActivity extends BaseActivity
 
   private CityAdapter mAdapter;
   @ViewInject(R.id.slidebar_words)
+
   private SlideBar mSlideBar;
   @ViewInject(R.id.tv_words_dialog)
+
   private TextView mDialog;
   private Map<String, Object> params = new HashMap<>();
 
@@ -47,6 +48,7 @@ public class CityActivity extends BaseActivity
   protected void onCreate(Bundle savedInstanceState)
   {
     super.onCreate(savedInstanceState);
+    ViewUtils.inject(this);
 
     mSlideBar.setCharDialag(mDialog);
     mSlideBar.setOnSlideBarItemClickListener(new SlideBar.OnSlideBarItemClickListener()
@@ -65,9 +67,13 @@ public class CityActivity extends BaseActivity
     loadData();
   }
 
+  /**
+   * 加载数据
+   */
   private void loadData()
   {
     params.put("RequestJson", "{\"pageType\":\"3\",\"inOutsideFlg\":\"0\"}");
+
     JDYHttpConnect.getInstance().getCity(params, new DataCallBack()
     {
       @Override
