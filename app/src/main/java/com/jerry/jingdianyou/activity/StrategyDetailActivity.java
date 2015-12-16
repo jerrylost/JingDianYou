@@ -84,6 +84,7 @@ public class StrategyDetailActivity extends BaseActivity implements View.OnTouch
   {
     super.onCreate(savedInstanceState);
     ViewUtils.inject(this);
+
     mImageLoader = JDYApplication.getApp().getmImageLoader();
     mOptions = JDYApplication.getApp().getmOptions();
     mRelativeLayout.setAlpha(0);
