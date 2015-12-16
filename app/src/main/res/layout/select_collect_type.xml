@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/green"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_select_collect"
+        android:text="收藏"
+        android:textColor="@color/white"
+        android:drawableLeft="@mipmap/detail_shou"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="40dp"/>
+
+    <View
+        android:background="@color/gray"
+        android:layout_width="150dp"
+        android:layout_height="0.1dp"/>
+
+    <TextView
+        android:id="@+id/tv_select_report"
+        android:text="举报"
+        android:textColor="@color/white"
+        android:drawableLeft="@mipmap/com_jubao"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="40dp"/>
+
+
+</LinearLayout>

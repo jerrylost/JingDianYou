@@ -42,7 +42,8 @@ public class RendezvousDetailAdapter extends BaseAdapter
   private int TYPE = 0;
   private int widthPixels = 0;
 
-  public RendezvousDetailAdapter(int widthPixels, List<RendezvousInfo.DataEntity> mList,
+  public
+  RendezvousDetailAdapter(int widthPixels, List<RendezvousInfo.DataEntity> mList,
                                  Context context,
                                  List<CommentList.Data> commentListData,
                                  List<RendezvousDtlList.Data> rendezvousDtlListData)

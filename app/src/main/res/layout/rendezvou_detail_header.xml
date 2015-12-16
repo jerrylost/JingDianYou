@@ -18,4 +18,15 @@
         android:textSize="20sp"
         android:text="@string/string_detail"
         />
+
+    <ImageButton
+        android:background="@null"
+        android:onClick="selectCollect"
+        android:scaleType="center"
+        android:id="@+id/iv_rendezvous_select"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/com_top_liebiao"/>
 </RelativeLayout>
