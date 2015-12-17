@@ -1,5 +1,6 @@
 package com.jerry.jingdianyou.activity;
 
+import android.app.ProgressDialog;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -16,6 +17,7 @@ import android.widget.ImageView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
+import com.jerry.jingdianyou.utils.DataLoadedCallBack;
 import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.view.annotation.ContentView;
 import com.lidroid.xutils.view.annotation.ViewInject;
@@ -37,7 +39,6 @@ import java.util.List;
 @ContentView(R.layout.activity_nearby)
 public class NearByActivity extends FragmentActivity implements View.OnClickListener
 {
-
   private List<Fragment> mFragments = new ArrayList<>();
 
   @ViewInject(R.id.st_chat_sliding)
@@ -49,7 +50,10 @@ public class NearByActivity extends FragmentActivity implements View.OnClickList
   @ViewInject(R.id.iv_nearby_select)
   private ImageButton mIb;
   private PopupWindow popupWindow;
-  private NearPersonFragment fragment = new NearPersonFragment();
+  private NearPersonFragment nearPersonFragment;
+  private NearSceneFragment nearSceneFragment;
+
+  private ProgressDialog mProgressDialog;
 
   @Override
   protected void onCreate(Bundle savedInstanceState)
@@ -57,17 +61,40 @@ public class NearByActivity extends FragmentActivity implements View.OnClickList
     super.onCreate(savedInstanceState);
     ViewUtils.inject(this);
 
-    mFragments.add(fragment);
-    mFragments.add(new NearSceneFragment());
+    mProgressDialog = new ProgressDialog(this);
+    mProgressDialog.setMessage("正在加载中....");
+    mProgressDialog.setCanceledOnTouchOutside(false);
+    mProgressDialog.setCancelable(false);
+    mProgressDialog.show();
+
+    // 身边的人
+    nearPersonFragment = NearPersonFragment.newInstance(new DataLoadedCallBack()
+    {
+      @Override
+      public void onFinished()
+      {
+        if (mProgressDialog != null && mProgressDialog.isShowing())
+        {
+          mProgressDialog.dismiss();
+        }
+      }
+    });
+    mFragments.add(nearPersonFragment);
+
+    // 身边的景
+    nearSceneFragment = new NearSceneFragment();
+    mFragments.add(nearSceneFragment);
 
     mSlidingTabLayout.setSelectedIndicatorColors(getResources().getColor(R.color.green));
     mViewPager.setOffscreenPageLimit(2);
     mSlidingTabLayout.setDistributeEvenly(true);
     mSlidingTabLayout.setCustomTabView(R.layout.sliding_layout, R.id.text);
-    MyAdapter adapter = new MyAdapter(getSupportFragmentManager());
-    mViewPager.setAdapter(adapter);
-    mSlidingTabLayout.setViewPager(mViewPager);
 
+    MyAdapter adapter = new MyAdapter(getSupportFragmentManager());
+
+    mViewPager.setAdapter(adapter);
+
+    mSlidingTabLayout.setViewPager(mViewPager);
   }
 
   class MyAdapter extends FragmentStatePagerAdapter
@@ -123,8 +150,7 @@ public class NearByActivity extends FragmentActivity implements View.OnClickList
 
     popupWindow = new PopupWindow(
         v, ViewGroup.LayoutParams.WRAP_CONTENT,
-        ViewGroup.LayoutParams.WRAP_CONTENT, true
-    );
+        ViewGroup.LayoutParams.WRAP_CONTENT, true);
 
     popupWindow.setTouchable(true);
     ColorDrawable cd = new ColorDrawable(Color.TRANSPARENT);
@@ -160,7 +186,7 @@ public class NearByActivity extends FragmentActivity implements View.OnClickList
    */
   private void updateData(String type)
   {
-    fragment.updateData(type);
+    nearPersonFragment.updateData(type);
     popupWindow.dismiss();
   }
 

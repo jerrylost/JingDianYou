@@ -19,11 +19,13 @@ import com.baidu.location.LocationClient;
 import com.baidu.location.LocationClientOption;
 import com.jerry.jingdianyou.R;
 import com.jerry.jingdianyou.application.AppManager;
+import com.jerry.jingdianyou.constant.App;
 import com.jerry.jingdianyou.fragment.HomeFragment;
 import com.jerry.jingdianyou.fragment.PersonFragment;
 import com.jerry.jingdianyou.fragment.RendezvousFragment;
 import com.jerry.jingdianyou.fragment.ScenicFragment;
 import com.jerry.jingdianyou.fragment.StrategyFragment;
+import com.jerry.jingdianyou.utils.SharePreUtils;
 import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.view.annotation.ContentView;
 import com.lidroid.xutils.view.annotation.ViewInject;
@@ -64,29 +66,22 @@ public class MainActivity extends FragmentActivity implements RadioGroup.OnCheck
     {
       //获取定位的状态码
       int locType = bdLocation.getLocType();
-
       //获取当前的经纬度
       //纬度
       double latitude = bdLocation.getLatitude();
-
       //经度
       double longitude = bdLocation.getLongitude();
 
       switch (locType)
       {
-
         //网络定位
         case BDLocation.TypeNetWorkLocation:
-
           //GPS
         case BDLocation.TypeGpsLocation:
-
           //缓存
         case BDLocation.TypeCacheLocation:
-
           //离线定位模式
         case BDLocation.TypeOffLineLocation:
-
           sendLocation(latitude, longitude);
           break;
       }
@@ -277,10 +272,14 @@ public class MainActivity extends FragmentActivity implements RadioGroup.OnCheck
   // 发送定位广播
   public void sendLocation(double latitude, double longitude)
   {
-    SharedPreferences sp = getSharedPreferences("jingdianyou", MODE_PRIVATE);
-    SharedPreferences.Editor edit = sp.edit();
-    edit.putString("latitude", String.valueOf(latitude));
-    edit.putString("longitude", String.valueOf(longitude));
-    edit.commit();
+    SharePreUtils utils = SharePreUtils.getInstance(App.SP_NAME);
+    utils.put("latitude", String.valueOf(latitude));
+    utils.put("longitude", String.valueOf(longitude));
+
+//    SharedPreferences sp = getSharedPreferences(App.SP_NAME, MODE_PRIVATE);
+//    SharedPreferences.Editor edit = sp.edit();
+//    edit.putString("latitude", String.valueOf(latitude));
+//    edit.putString("longitude", String.valueOf(longitude));
+//    edit.commit();
   }
 }

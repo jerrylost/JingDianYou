@@ -1,6 +1,5 @@
 package com.jerry.jingdianyou.activity;
 
-import android.app.Activity;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -12,14 +11,14 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 
 import com.google.gson.Gson;
-import com.lidroid.xutils.ViewUtils;
-import com.lidroid.xutils.view.annotation.ContentView;
-import com.lidroid.xutils.view.annotation.ViewInject;
 import com.jerry.jingdianyou.R;
 import com.jerry.jingdianyou.adapter.ChatAdapter;
 import com.jerry.jingdianyou.entity.Chat;
 import com.jerry.jingdianyou.utils.DataCallBack;
 import com.jerry.jingdianyou.utils.JDYHttpConnect;
+import com.lidroid.xutils.ViewUtils;
+import com.lidroid.xutils.view.annotation.ContentView;
+import com.lidroid.xutils.view.annotation.ViewInject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -34,18 +33,11 @@ public class ChatActivity extends BaseActivity implements View.OnClickListener
 {
   @ViewInject(R.id.lv_chat)
   private ListView mLvChat;
+
   private List<Chat.Data> mList = new ArrayList<>();
   private Map<String, Object> params = new HashMap<>();
   private ChatAdapter mAdapter;
   private PopupWindow popupWindow;
-
-  @Override
-  protected void onCreate(Bundle savedInstanceState)
-  {
-    super.onCreate(savedInstanceState);
-    initView();
-    loadData();
-  }
 
   private String position_y = "40.055538";
   private String position_x = "116.302902";
@@ -53,6 +45,21 @@ public class ChatActivity extends BaseActivity implements View.OnClickListener
   private String page_size = "100";
   private String range = "100000";
   private String member_id = "";
+
+  @Override
+  protected void onCreate(Bundle savedInstanceState)
+  {
+    super.onCreate(savedInstanceState);
+    ViewUtils.inject(this);
+
+    initView();
+
+    //SharePreUtils utils = SharePreUtils.getInstance(App.SP_NAME);
+    //position_x = utils.getString("latitude", position_x);
+    //position_y = utils.getString("longitude",position_y);
+
+    loadData();
+  }
 
   private void loadData()
   {
@@ -63,6 +70,7 @@ public class ChatActivity extends BaseActivity implements View.OnClickListener
         "\"sex_type\":\"" + sex_type + "\"," +
         "\"range\":\"" + range + "\"," +
         "\"member_id\":\"" + member_id + "\"}");
+
     JDYHttpConnect.getInstance().getChat(params, new DataCallBack()
     {
       @Override
@@ -70,6 +78,7 @@ public class ChatActivity extends BaseActivity implements View.OnClickListener
       {
         Gson gson = new Gson();
         Chat chat = gson.fromJson(response, Chat.class);
+
         if (chat != null)
         {
           List<Chat.Data> data = chat.getData();

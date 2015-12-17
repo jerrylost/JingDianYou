@@ -51,6 +51,10 @@ public class NearSceneFragment extends Fragment
     View view = inflater.inflate(R.layout.fg_nearby_scene, container, false);
     ViewUtils.inject(this, view);
 
+    //SharePreUtils utils = SharePreUtils.getInstance(App.SP_NAME);
+    //position_x = utils.getString("latitude", position_x);
+    //position_y = utils.getString("longitude",position_y);
+
     initView();
     loadData();
     return view;
@@ -73,6 +77,7 @@ public class NearSceneFragment extends Fragment
         "\"page_size\":\"" + page_size + "\"," +
         "\"range\":\"" + range + "\"," +
         "\"member_id\":\"" + member_id + "\"}");
+
     JDYHttpConnect.getInstance().getNearByScene(params, new DataCallBack()
     {
       @Override

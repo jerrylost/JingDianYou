@@ -16,6 +16,5 @@
         android:layout_height="match_parent"
         android:textColor="@color/white"
         android:textSize="20sp"
-        android:text="@string/string_onway"
-        />
+        android:text="@string/string_onway"/>
 </RelativeLayout>

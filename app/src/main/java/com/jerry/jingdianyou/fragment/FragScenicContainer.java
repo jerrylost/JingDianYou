@@ -194,11 +194,12 @@ public class FragScenicContainer extends Fragment
         loadJingDianData();
       }
     });
+
     //显示正在加载
     mProgressDialog = new ProgressDialog(getActivity());
     mProgressDialog.setMessage("正在加载中...");
     mProgressDialog.setCancelable(false);
-    //mProgressDialog.show();
+    mProgressDialog.show();
   }
 
   private void hidLoading()

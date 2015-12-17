@@ -196,7 +196,6 @@ public class StrategyDetailActivity extends BaseActivity implements View.OnTouch
     if (simpleData)
     {
       Toast.makeText(StrategyDetailActivity.this, "数据已经存在，不用再收藏了", Toast.LENGTH_SHORT).show();
-
     }
     else
     {

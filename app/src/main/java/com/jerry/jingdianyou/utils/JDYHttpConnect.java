@@ -281,15 +281,11 @@ public class JDYHttpConnect
 
       for (Map.Entry<String, Object> entry : set)
       {
-
         if (entry.getValue() != null && !entry.getValue().equals(""))
         {
-
           requestParams.addBodyParameter(
               entry.getKey(), String.valueOf(entry.getValue()));
-
         }
-
       }
     }
 

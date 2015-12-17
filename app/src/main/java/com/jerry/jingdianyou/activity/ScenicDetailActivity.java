@@ -243,7 +243,11 @@ public class ScenicDetailActivity extends BaseActivity
             {
                 //获取景区信息
                 mTraveldata = mDetail.getData().getScenic_product_data();
-                book_require = mTraveldata.get(0).getBooking_requirement();
+                if (!mTraveldata.isEmpty())
+                {
+                    book_require = mTraveldata.get(0).getBooking_requirement();
+                }
+
                 mAddress = dataEntity.getAddress();
                 mDescription = dataEntity.getProduct_description();
 

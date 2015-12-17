@@ -9,17 +9,14 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 
 import com.google.gson.Gson;
-import com.handmark.pulltorefresh.library.PullToRefreshBase;
-import com.handmark.pulltorefresh.library.PullToRefreshListView;
-import com.lidroid.xutils.ViewUtils;
-import com.lidroid.xutils.view.annotation.ViewInject;
 import com.jerry.jingdianyou.R;
 import com.jerry.jingdianyou.adapter.ChatAdapter;
-import com.jerry.jingdianyou.adapter.TuCaoAdapter;
 import com.jerry.jingdianyou.entity.Chat;
-import com.jerry.jingdianyou.entity.TuCao;
 import com.jerry.jingdianyou.utils.DataCallBack;
+import com.jerry.jingdianyou.utils.DataLoadedCallBack;
 import com.jerry.jingdianyou.utils.JDYHttpConnect;
+import com.lidroid.xutils.ViewUtils;
+import com.lidroid.xutils.view.annotation.ViewInject;
 
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -36,15 +33,22 @@ public class NearPersonFragment extends Fragment
   private List<Chat.Data> mList = new LinkedList<>();
   private ChatAdapter mAdapter;
   private Map<String, Object> params = new HashMap<>();
-  private static NearPersonFragment fragment = new NearPersonFragment();
 
-  public static NearPersonFragment getInstance()
+  private DataLoadedCallBack callBack;
+  private NearPersonFragment()
   {
-    return fragment;
   }
 
-  public NearPersonFragment()
+  public static NearPersonFragment newInstance(DataLoadedCallBack callBack)
   {
+    Bundle args = new Bundle();
+
+    NearPersonFragment fragment = new NearPersonFragment();
+    fragment.callBack = callBack;
+
+    fragment.setArguments(args);
+
+    return fragment;
   }
 
   @Nullable
@@ -54,8 +58,14 @@ public class NearPersonFragment extends Fragment
     View view = inflater.inflate(R.layout.fg_nearby_scene, container, false);
     ViewUtils.inject(this, view);
 
+    //SharePreUtils utils = SharePreUtils.getInstance(App.SP_NAME);
+    //position_x = utils.getString("latitude", position_x);
+    //position_y = utils.getString("longitude",position_y);
+
     initView();
+
     loadData();
+
     return view;
   }
 
@@ -78,6 +88,7 @@ public class NearPersonFragment extends Fragment
         "\"page_size\":\"" + page_size + "\"," +
         "\"range\":\"" + range + "\"," +
         "\"member_id\":\"" + member_id + "\"}");
+
     JDYHttpConnect.getInstance().getNearByPerson(params, new DataCallBack()
     {
       @Override
@@ -95,12 +106,16 @@ public class NearPersonFragment extends Fragment
             mAdapter.notifyDataSetChanged();
           }
         }
+
+        // 通知已经加载
+        callBack.onFinished();
       }
 
       @Override
       public void onFailure(String error)
       {
-
+        // 通知已经加载
+        callBack.onFinished();
       }
     });
   }

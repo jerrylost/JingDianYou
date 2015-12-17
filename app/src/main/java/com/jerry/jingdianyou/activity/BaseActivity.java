@@ -12,37 +12,37 @@ import com.jerry.jingdianyou.utils.ToastUtils;
  */
 public abstract class BaseActivity extends Activity
 {
-    @Override
-    protected void onCreate(Bundle savedInstanceState)
+  @Override
+  protected void onCreate(Bundle savedInstanceState)
+  {
+    super.onCreate(savedInstanceState);
+
+    AppManager.getAppManager().addActivity(this);
+  }
+
+  @Override
+  protected void onDestroy()
+  {
+    super.onDestroy();
+
+    AppManager.getAppManager().removeActivity(this);
+  }
+
+  protected void showToast(CharSequence tip)
+  {
+    if (TextUtils.isEmpty(tip))
     {
-        super.onCreate(savedInstanceState);
-
-        AppManager.getAppManager().addActivity(this);
+      return;
     }
+    ToastUtils.show(this, tip);
+  }
 
-    @Override
-    protected void onDestroy()
+  protected void showToast(int resId)
+  {
+    if (resId == -1)
     {
-        super.onDestroy();
-
-        AppManager.getAppManager().removeActivity(this);
+      return;
     }
-
-    protected void showToast(CharSequence tip)
-    {
-        if (TextUtils.isEmpty(tip))
-        {
-            return;
-        }
-        ToastUtils.show(this, tip);
-    }
-
-    protected void showToast(int resId)
-    {
-        if (resId == -1)
-        {
-            return;
-        }
-        this.showToast(getString(resId));
-    }
+    this.showToast(getString(resId));
+  }
 }

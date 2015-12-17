@@ -62,7 +62,6 @@ public class ChatAdapter extends BaseAdapter
     ViewHolder viewHolder = null;
     if (convertView == null)
     {
-
       convertView = layoutInflater.inflate(R.layout.list_item_chat, null);
       viewHolder = new ViewHolder();
       ViewUtils.inject(viewHolder, convertView);
