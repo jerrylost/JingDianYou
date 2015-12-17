@@ -127,8 +127,7 @@ public class ChatActivity extends BaseActivity implements View.OnClickListener
 
     popupWindow = new PopupWindow(
         v, ViewGroup.LayoutParams.WRAP_CONTENT,
-        ViewGroup.LayoutParams.WRAP_CONTENT, true
-    );
+        ViewGroup.LayoutParams.WRAP_CONTENT, true);
 
     popupWindow.setTouchable(true);
     ColorDrawable cd = new ColorDrawable(Color.TRANSPARENT);
