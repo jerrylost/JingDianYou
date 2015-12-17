@@ -20,6 +20,8 @@
     <!-- 获取模拟定位信息 -->
     <uses-permission android:name="android.permission.ACCESS_GPS"/>
 
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
     <application
         android:name=".application.JDYApplication"
         android:allowBackup="true"
